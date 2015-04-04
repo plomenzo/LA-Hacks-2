@@ -55,12 +55,18 @@ namespace LA_Hacks_2015
 
         private void introButton_Click(object sender, EventArgs e)
         {
+            tabControl1.SelectTab("t2");
             level_1_Button.Enabled = true;
         }
 
         private void level_1_Button_Click(object sender, EventArgs e)
         {
             level_2_Button.Enabled = true;
+        }
+
+        private void exitButton2_Click(object sender, EventArgs e)
+        {
+            Application.Exit(); 
         }
     }
 }
