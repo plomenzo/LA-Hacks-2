@@ -39,10 +39,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.Label();
             this.t2 = new System.Windows.Forms.TabPage();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.sol1 = new System.Windows.Forms.PictureBox();
+            this.Skip2 = new System.Windows.Forms.Label();
+            this.backtoMM2 = new System.Windows.Forms.Label();
+            this.exitButton2 = new System.Windows.Forms.Label();
             this.t3 = new System.Windows.Forms.TabPage();
             this.TEST = new System.Windows.Forms.Button();
             this.t4 = new System.Windows.Forms.TabPage();
@@ -63,14 +62,9 @@
             this.t11 = new System.Windows.Forms.TabPage();
             this.t12 = new System.Windows.Forms.TabPage();
             this.t13 = new System.Windows.Forms.TabPage();
-            this.exitButton2 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.t1.SuspendLayout();
             this.t2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sol1)).BeginInit();
             this.t3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -185,11 +179,9 @@
             // 
             // t2
             // 
+            this.t2.Controls.Add(this.Skip2);
+            this.t2.Controls.Add(this.backtoMM2);
             this.t2.Controls.Add(this.exitButton2);
-            this.t2.Controls.Add(this.pictureBox2);
-            this.t2.Controls.Add(this.pictureBox4);
-            this.t2.Controls.Add(this.pictureBox3);
-            this.t2.Controls.Add(this.sol1);
             this.t2.Location = new System.Drawing.Point(4, 22);
             this.t2.Name = "t2";
             this.t2.Padding = new System.Windows.Forms.Padding(3);
@@ -198,47 +190,38 @@
             this.t2.Text = "t2";
             this.t2.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
+            // Skip2
             // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.BackColor = System.Drawing.Color.Black;
-            this.pictureBox2.Location = new System.Drawing.Point(385, 215);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(82, 69);
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
+            this.Skip2.AutoSize = true;
+            this.Skip2.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Skip2.Location = new System.Drawing.Point(643, 256);
+            this.Skip2.Name = "Skip2";
+            this.Skip2.Size = new System.Drawing.Size(60, 23);
+            this.Skip2.TabIndex = 8;
+            this.Skip2.Text = "Skip";
+            this.Skip2.Click += new System.EventHandler(this.Skip2_Click);
             // 
-            // pictureBox4
+            // backtoMM2
             // 
-            this.pictureBox4.Image = global::LA_Hacks_2015.Properties.Resources.SampleBubble1;
-            this.pictureBox4.Location = new System.Drawing.Point(153, 215);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(82, 69);
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
+            this.backtoMM2.AutoSize = true;
+            this.backtoMM2.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backtoMM2.Location = new System.Drawing.Point(602, 388);
+            this.backtoMM2.Name = "backtoMM2";
+            this.backtoMM2.Size = new System.Drawing.Size(227, 23);
+            this.backtoMM2.TabIndex = 7;
+            this.backtoMM2.Text = "Back to Main Menu";
+            this.backtoMM2.Click += new System.EventHandler(this.backtoMM2_Click);
             // 
-            // pictureBox3
+            // exitButton2
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Black;
-            this.pictureBox3.Location = new System.Drawing.Point(369, 112);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(82, 69);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox3_DragDrop);
-            this.pictureBox3.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox3_DragEnter);
-            // 
-            // sol1
-            // 
-            this.sol1.Image = global::LA_Hacks_2015.Properties.Resources.SampleBubble1;
-            this.sol1.Location = new System.Drawing.Point(137, 112);
-            this.sol1.Name = "sol1";
-            this.sol1.Size = new System.Drawing.Size(82, 69);
-            this.sol1.TabIndex = 0;
-            this.sol1.TabStop = false;
-            this.sol1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
+            this.exitButton2.AutoSize = true;
+            this.exitButton2.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton2.Location = new System.Drawing.Point(781, 64);
+            this.exitButton2.Name = "exitButton2";
+            this.exitButton2.Size = new System.Drawing.Size(48, 23);
+            this.exitButton2.TabIndex = 5;
+            this.exitButton2.Text = "exit";
+            this.exitButton2.Click += new System.EventHandler(this.exitButton2_Click);
             // 
             // t3
             // 
@@ -440,16 +423,6 @@
             this.t13.Text = "tabPage18";
             this.t13.UseVisualStyleBackColor = true;
             // 
-            // exitButton2
-            // 
-            this.exitButton2.AutoSize = true;
-            this.exitButton2.Location = new System.Drawing.Point(599, 64);
-            this.exitButton2.Name = "exitButton2";
-            this.exitButton2.Size = new System.Drawing.Size(23, 13);
-            this.exitButton2.TabIndex = 5;
-            this.exitButton2.Text = "exit";
-            this.exitButton2.Click += new System.EventHandler(this.exitButton2_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -461,16 +434,11 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.t1.ResumeLayout(false);
             this.t1.PerformLayout();
             this.t2.ResumeLayout(false);
             this.t2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sol1)).EndInit();
             this.t3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -501,16 +469,14 @@
         private System.Windows.Forms.TabPage t12;
         private System.Windows.Forms.TabPage t13;
         private System.Windows.Forms.TabPage t2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox sol1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label exitButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label introButton;
         private System.Windows.Forms.Label level_1_Button;
         private System.Windows.Forms.Label level_2_Button;
         private System.Windows.Forms.Label exitButton2;
+        private System.Windows.Forms.Label backtoMM2;
+        private System.Windows.Forms.Label Skip2;
     }
 }
 
