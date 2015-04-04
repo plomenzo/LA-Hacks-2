@@ -65,5 +65,10 @@ namespace LA_Hacks_2015
         {
             tabControl1.SelectTab("t3");
         }
+
+        private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
+        {
+            axWindowsMediaPlayer1.URL = "The Price Is Right - Manuela_s Blooper";
+        }
     }
 }

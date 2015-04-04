@@ -31,6 +31,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.t1 = new System.Windows.Forms.TabPage();
             this.level_2_Button = new System.Windows.Forms.Label();
@@ -62,10 +63,13 @@
             this.t11 = new System.Windows.Forms.TabPage();
             this.t12 = new System.Windows.Forms.TabPage();
             this.t13 = new System.Windows.Forms.TabPage();
+            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tabControl1.SuspendLayout();
             this.t1.SuspendLayout();
             this.t2.SuspendLayout();
             this.t3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -182,6 +186,7 @@
             this.t2.Controls.Add(this.Skip2);
             this.t2.Controls.Add(this.backtoMM2);
             this.t2.Controls.Add(this.exitButton2);
+            this.t2.Controls.Add(this.axWindowsMediaPlayer1);
             this.t2.Location = new System.Drawing.Point(4, 22);
             this.t2.Name = "t2";
             this.t2.Padding = new System.Windows.Forms.Padding(3);
@@ -423,6 +428,20 @@
             this.t13.Text = "tabPage18";
             this.t13.UseVisualStyleBackColor = true;
             // 
+            // axWindowsMediaPlayer1
+            // 
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(70, 64);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(305, 287);
+            this.axWindowsMediaPlayer1.TabIndex = 9;
+            this.axWindowsMediaPlayer1.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -440,6 +459,7 @@
             this.t2.ResumeLayout(false);
             this.t2.PerformLayout();
             this.t3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -477,6 +497,8 @@
         private System.Windows.Forms.Label exitButton2;
         private System.Windows.Forms.Label backtoMM2;
         private System.Windows.Forms.Label Skip2;
+        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
