@@ -13,6 +13,7 @@ namespace LA_Hacks_2015
         [STAThread]
         static void Main()
         {
+            //hello
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
