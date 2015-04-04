@@ -47,5 +47,20 @@ namespace LA_Hacks_2015
             pictureBox3.AllowDrop = true;
             pictureBox2.AllowDrop = true;
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void introButton_Click(object sender, EventArgs e)
+        {
+            level_1_Button.Enabled = true;
+        }
+
+        private void level_1_Button_Click(object sender, EventArgs e)
+        {
+            level_2_Button.Enabled = true;
+        }
     }
 }

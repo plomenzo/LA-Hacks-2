@@ -31,9 +31,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Start = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.t1 = new System.Windows.Forms.TabPage();
+            this.t2 = new System.Windows.Forms.TabPage();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.sol1 = new System.Windows.Forms.PictureBox();
             this.t3 = new System.Windows.Forms.TabPage();
             this.TEST = new System.Windows.Forms.Button();
             this.t4 = new System.Windows.Forms.TabPage();
@@ -54,30 +58,20 @@
             this.t11 = new System.Windows.Forms.TabPage();
             this.t12 = new System.Windows.Forms.TabPage();
             this.t13 = new System.Windows.Forms.TabPage();
-            this.sol1 = new System.Windows.Forms.PictureBox();
-            this.t2 = new System.Windows.Forms.TabPage();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.exitButton = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.introButton = new System.Windows.Forms.Label();
+            this.level_1_Button = new System.Windows.Forms.Label();
+            this.level_2_Button = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.t1.SuspendLayout();
-            this.t3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sol1)).BeginInit();
             this.t2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sol1)).BeginInit();
+            this.t3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // Start
-            // 
-            this.Start.Location = new System.Drawing.Point(295, 119);
-            this.Start.Name = "Start";
-            this.Start.Size = new System.Drawing.Size(75, 23);
-            this.Start.TabIndex = 1;
-            this.Start.Text = "Start";
-            this.Start.UseVisualStyleBackColor = true;
-            this.Start.Click += new System.EventHandler(this.Start_Click);
             // 
             // tabControl1
             // 
@@ -108,229 +102,24 @@
             this.tabControl1.Location = new System.Drawing.Point(0, -38);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(901, 440);
+            this.tabControl1.Size = new System.Drawing.Size(1453, 882);
             this.tabControl1.TabIndex = 2;
             // 
             // t1
             // 
-            this.t1.Controls.Add(this.Start);
+            this.t1.BackgroundImage = global::LA_Hacks_2015.Properties.Resources.batman;
+            this.t1.Controls.Add(this.level_2_Button);
+            this.t1.Controls.Add(this.level_1_Button);
+            this.t1.Controls.Add(this.introButton);
+            this.t1.Controls.Add(this.label1);
+            this.t1.Controls.Add(this.exitButton);
             this.t1.Location = new System.Drawing.Point(4, 22);
             this.t1.Name = "t1";
             this.t1.Padding = new System.Windows.Forms.Padding(3);
-            this.t1.Size = new System.Drawing.Size(893, 414);
+            this.t1.Size = new System.Drawing.Size(1445, 856);
             this.t1.TabIndex = 0;
             this.t1.Text = "tabPage1";
             this.t1.UseVisualStyleBackColor = true;
-            // 
-            // t3
-            // 
-            this.t3.Controls.Add(this.TEST);
-            this.t3.Location = new System.Drawing.Point(4, 22);
-            this.t3.Name = "t3";
-            this.t3.Padding = new System.Windows.Forms.Padding(3);
-            this.t3.Size = new System.Drawing.Size(751, 390);
-            this.t3.TabIndex = 2;
-            this.t3.Text = "tabPage3";
-            this.t3.UseVisualStyleBackColor = true;
-            // 
-            // TEST
-            // 
-            this.TEST.Location = new System.Drawing.Point(375, 154);
-            this.TEST.Name = "TEST";
-            this.TEST.Size = new System.Drawing.Size(75, 23);
-            this.TEST.TabIndex = 0;
-            this.TEST.Text = "TEST";
-            this.TEST.UseVisualStyleBackColor = true;
-            // 
-            // t4
-            // 
-            this.t4.Location = new System.Drawing.Point(4, 22);
-            this.t4.Name = "t4";
-            this.t4.Padding = new System.Windows.Forms.Padding(3);
-            this.t4.Size = new System.Drawing.Size(751, 390);
-            this.t4.TabIndex = 3;
-            this.t4.Text = "tabPage1";
-            this.t4.UseVisualStyleBackColor = true;
-            // 
-            // t14
-            // 
-            this.t14.Location = new System.Drawing.Point(4, 22);
-            this.t14.Name = "t14";
-            this.t14.Padding = new System.Windows.Forms.Padding(3);
-            this.t14.Size = new System.Drawing.Size(751, 390);
-            this.t14.TabIndex = 4;
-            this.t14.Text = "tabPage2";
-            this.t14.UseVisualStyleBackColor = true;
-            // 
-            // t15
-            // 
-            this.t15.Location = new System.Drawing.Point(4, 22);
-            this.t15.Name = "t15";
-            this.t15.Padding = new System.Windows.Forms.Padding(3);
-            this.t15.Size = new System.Drawing.Size(751, 390);
-            this.t15.TabIndex = 5;
-            this.t15.Text = "tabPage3";
-            this.t15.UseVisualStyleBackColor = true;
-            // 
-            // t16
-            // 
-            this.t16.Location = new System.Drawing.Point(4, 22);
-            this.t16.Name = "t16";
-            this.t16.Padding = new System.Windows.Forms.Padding(3);
-            this.t16.Size = new System.Drawing.Size(751, 390);
-            this.t16.TabIndex = 6;
-            this.t16.Text = "tabPage4";
-            this.t16.UseVisualStyleBackColor = true;
-            // 
-            // t17
-            // 
-            this.t17.Location = new System.Drawing.Point(4, 22);
-            this.t17.Name = "t17";
-            this.t17.Padding = new System.Windows.Forms.Padding(3);
-            this.t17.Size = new System.Drawing.Size(751, 390);
-            this.t17.TabIndex = 7;
-            this.t17.Text = "tabPage5";
-            this.t17.UseVisualStyleBackColor = true;
-            // 
-            // t18
-            // 
-            this.t18.Location = new System.Drawing.Point(4, 22);
-            this.t18.Name = "t18";
-            this.t18.Padding = new System.Windows.Forms.Padding(3);
-            this.t18.Size = new System.Drawing.Size(751, 390);
-            this.t18.TabIndex = 8;
-            this.t18.Text = "tabPage6";
-            this.t18.UseVisualStyleBackColor = true;
-            // 
-            // t19
-            // 
-            this.t19.Location = new System.Drawing.Point(4, 22);
-            this.t19.Name = "t19";
-            this.t19.Padding = new System.Windows.Forms.Padding(3);
-            this.t19.Size = new System.Drawing.Size(751, 390);
-            this.t19.TabIndex = 9;
-            this.t19.Text = "tabPage7";
-            this.t19.UseVisualStyleBackColor = true;
-            // 
-            // t20
-            // 
-            this.t20.Location = new System.Drawing.Point(4, 22);
-            this.t20.Name = "t20";
-            this.t20.Padding = new System.Windows.Forms.Padding(3);
-            this.t20.Size = new System.Drawing.Size(751, 390);
-            this.t20.TabIndex = 10;
-            this.t20.Text = "tabPage8";
-            this.t20.UseVisualStyleBackColor = true;
-            // 
-            // t21
-            // 
-            this.t21.Location = new System.Drawing.Point(4, 22);
-            this.t21.Name = "t21";
-            this.t21.Padding = new System.Windows.Forms.Padding(3);
-            this.t21.Size = new System.Drawing.Size(751, 390);
-            this.t21.TabIndex = 11;
-            this.t21.Text = "tabPage9";
-            this.t21.UseVisualStyleBackColor = true;
-            // 
-            // t5
-            // 
-            this.t5.Location = new System.Drawing.Point(4, 22);
-            this.t5.Name = "t5";
-            this.t5.Padding = new System.Windows.Forms.Padding(3);
-            this.t5.Size = new System.Drawing.Size(751, 390);
-            this.t5.TabIndex = 12;
-            this.t5.Text = "tabPage10";
-            this.t5.UseVisualStyleBackColor = true;
-            // 
-            // t6
-            // 
-            this.t6.Location = new System.Drawing.Point(4, 22);
-            this.t6.Name = "t6";
-            this.t6.Padding = new System.Windows.Forms.Padding(3);
-            this.t6.Size = new System.Drawing.Size(751, 390);
-            this.t6.TabIndex = 13;
-            this.t6.Text = "tabPage11";
-            this.t6.UseVisualStyleBackColor = true;
-            // 
-            // t7
-            // 
-            this.t7.Location = new System.Drawing.Point(4, 22);
-            this.t7.Name = "t7";
-            this.t7.Padding = new System.Windows.Forms.Padding(3);
-            this.t7.Size = new System.Drawing.Size(751, 390);
-            this.t7.TabIndex = 14;
-            this.t7.Text = "tabPage12";
-            this.t7.UseVisualStyleBackColor = true;
-            // 
-            // t8
-            // 
-            this.t8.Location = new System.Drawing.Point(4, 22);
-            this.t8.Name = "t8";
-            this.t8.Padding = new System.Windows.Forms.Padding(3);
-            this.t8.Size = new System.Drawing.Size(751, 390);
-            this.t8.TabIndex = 15;
-            this.t8.Text = "tabPage13";
-            this.t8.UseVisualStyleBackColor = true;
-            // 
-            // t9
-            // 
-            this.t9.Location = new System.Drawing.Point(4, 22);
-            this.t9.Name = "t9";
-            this.t9.Padding = new System.Windows.Forms.Padding(3);
-            this.t9.Size = new System.Drawing.Size(751, 390);
-            this.t9.TabIndex = 16;
-            this.t9.Text = "tabPage14";
-            this.t9.UseVisualStyleBackColor = true;
-            // 
-            // t10
-            // 
-            this.t10.Location = new System.Drawing.Point(4, 22);
-            this.t10.Name = "t10";
-            this.t10.Padding = new System.Windows.Forms.Padding(3);
-            this.t10.Size = new System.Drawing.Size(751, 390);
-            this.t10.TabIndex = 17;
-            this.t10.Text = "tabPage15";
-            this.t10.UseVisualStyleBackColor = true;
-            // 
-            // t11
-            // 
-            this.t11.Location = new System.Drawing.Point(4, 22);
-            this.t11.Name = "t11";
-            this.t11.Padding = new System.Windows.Forms.Padding(3);
-            this.t11.Size = new System.Drawing.Size(751, 390);
-            this.t11.TabIndex = 18;
-            this.t11.Text = "tabPage16";
-            this.t11.UseVisualStyleBackColor = true;
-            // 
-            // t12
-            // 
-            this.t12.Location = new System.Drawing.Point(4, 22);
-            this.t12.Name = "t12";
-            this.t12.Padding = new System.Windows.Forms.Padding(3);
-            this.t12.Size = new System.Drawing.Size(751, 390);
-            this.t12.TabIndex = 19;
-            this.t12.Text = "tabPage17";
-            this.t12.UseVisualStyleBackColor = true;
-            // 
-            // t13
-            // 
-            this.t13.Location = new System.Drawing.Point(4, 22);
-            this.t13.Name = "t13";
-            this.t13.Padding = new System.Windows.Forms.Padding(3);
-            this.t13.Size = new System.Drawing.Size(751, 390);
-            this.t13.TabIndex = 20;
-            this.t13.Text = "tabPage18";
-            this.t13.UseVisualStyleBackColor = true;
-            // 
-            // sol1
-            // 
-            this.sol1.Image = global::LA_Hacks_2015.Properties.Resources.SampleBubble1;
-            this.sol1.Location = new System.Drawing.Point(137, 112);
-            this.sol1.Name = "sol1";
-            this.sol1.Size = new System.Drawing.Size(82, 69);
-            this.sol1.TabIndex = 0;
-            this.sol1.TabStop = false;
-            this.sol1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             // 
             // t2
             // 
@@ -341,21 +130,10 @@
             this.t2.Location = new System.Drawing.Point(4, 22);
             this.t2.Name = "t2";
             this.t2.Padding = new System.Windows.Forms.Padding(3);
-            this.t2.Size = new System.Drawing.Size(751, 390);
+            this.t2.Size = new System.Drawing.Size(893, 414);
             this.t2.TabIndex = 1;
             this.t2.Text = "t2";
             this.t2.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Black;
-            this.pictureBox3.Location = new System.Drawing.Point(369, 112);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(82, 69);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox3_DragDrop);
-            this.pictureBox3.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox3_DragEnter);
             // 
             // pictureBox2
             // 
@@ -378,11 +156,293 @@
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Black;
+            this.pictureBox3.Location = new System.Drawing.Point(369, 112);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(82, 69);
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.DragDrop += new System.Windows.Forms.DragEventHandler(this.pictureBox3_DragDrop);
+            this.pictureBox3.DragEnter += new System.Windows.Forms.DragEventHandler(this.pictureBox3_DragEnter);
+            // 
+            // sol1
+            // 
+            this.sol1.Image = global::LA_Hacks_2015.Properties.Resources.SampleBubble1;
+            this.sol1.Location = new System.Drawing.Point(137, 112);
+            this.sol1.Name = "sol1";
+            this.sol1.Size = new System.Drawing.Size(82, 69);
+            this.sol1.TabIndex = 0;
+            this.sol1.TabStop = false;
+            this.sol1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
+            // 
+            // t3
+            // 
+            this.t3.Controls.Add(this.TEST);
+            this.t3.Location = new System.Drawing.Point(4, 22);
+            this.t3.Name = "t3";
+            this.t3.Padding = new System.Windows.Forms.Padding(3);
+            this.t3.Size = new System.Drawing.Size(893, 414);
+            this.t3.TabIndex = 2;
+            this.t3.Text = "tabPage3";
+            this.t3.UseVisualStyleBackColor = true;
+            // 
+            // TEST
+            // 
+            this.TEST.Location = new System.Drawing.Point(375, 154);
+            this.TEST.Name = "TEST";
+            this.TEST.Size = new System.Drawing.Size(75, 23);
+            this.TEST.TabIndex = 0;
+            this.TEST.Text = "TEST";
+            this.TEST.UseVisualStyleBackColor = true;
+            // 
+            // t4
+            // 
+            this.t4.Location = new System.Drawing.Point(4, 22);
+            this.t4.Name = "t4";
+            this.t4.Padding = new System.Windows.Forms.Padding(3);
+            this.t4.Size = new System.Drawing.Size(893, 414);
+            this.t4.TabIndex = 3;
+            this.t4.Text = "tabPage1";
+            this.t4.UseVisualStyleBackColor = true;
+            // 
+            // t14
+            // 
+            this.t14.Location = new System.Drawing.Point(4, 22);
+            this.t14.Name = "t14";
+            this.t14.Padding = new System.Windows.Forms.Padding(3);
+            this.t14.Size = new System.Drawing.Size(893, 414);
+            this.t14.TabIndex = 4;
+            this.t14.Text = "tabPage2";
+            this.t14.UseVisualStyleBackColor = true;
+            // 
+            // t15
+            // 
+            this.t15.Location = new System.Drawing.Point(4, 22);
+            this.t15.Name = "t15";
+            this.t15.Padding = new System.Windows.Forms.Padding(3);
+            this.t15.Size = new System.Drawing.Size(893, 414);
+            this.t15.TabIndex = 5;
+            this.t15.Text = "tabPage3";
+            this.t15.UseVisualStyleBackColor = true;
+            // 
+            // t16
+            // 
+            this.t16.Location = new System.Drawing.Point(4, 22);
+            this.t16.Name = "t16";
+            this.t16.Padding = new System.Windows.Forms.Padding(3);
+            this.t16.Size = new System.Drawing.Size(893, 414);
+            this.t16.TabIndex = 6;
+            this.t16.Text = "tabPage4";
+            this.t16.UseVisualStyleBackColor = true;
+            // 
+            // t17
+            // 
+            this.t17.Location = new System.Drawing.Point(4, 22);
+            this.t17.Name = "t17";
+            this.t17.Padding = new System.Windows.Forms.Padding(3);
+            this.t17.Size = new System.Drawing.Size(893, 414);
+            this.t17.TabIndex = 7;
+            this.t17.Text = "tabPage5";
+            this.t17.UseVisualStyleBackColor = true;
+            // 
+            // t18
+            // 
+            this.t18.Location = new System.Drawing.Point(4, 22);
+            this.t18.Name = "t18";
+            this.t18.Padding = new System.Windows.Forms.Padding(3);
+            this.t18.Size = new System.Drawing.Size(893, 414);
+            this.t18.TabIndex = 8;
+            this.t18.Text = "tabPage6";
+            this.t18.UseVisualStyleBackColor = true;
+            // 
+            // t19
+            // 
+            this.t19.Location = new System.Drawing.Point(4, 22);
+            this.t19.Name = "t19";
+            this.t19.Padding = new System.Windows.Forms.Padding(3);
+            this.t19.Size = new System.Drawing.Size(893, 414);
+            this.t19.TabIndex = 9;
+            this.t19.Text = "tabPage7";
+            this.t19.UseVisualStyleBackColor = true;
+            // 
+            // t20
+            // 
+            this.t20.Location = new System.Drawing.Point(4, 22);
+            this.t20.Name = "t20";
+            this.t20.Padding = new System.Windows.Forms.Padding(3);
+            this.t20.Size = new System.Drawing.Size(893, 414);
+            this.t20.TabIndex = 10;
+            this.t20.Text = "tabPage8";
+            this.t20.UseVisualStyleBackColor = true;
+            // 
+            // t21
+            // 
+            this.t21.Location = new System.Drawing.Point(4, 22);
+            this.t21.Name = "t21";
+            this.t21.Padding = new System.Windows.Forms.Padding(3);
+            this.t21.Size = new System.Drawing.Size(893, 414);
+            this.t21.TabIndex = 11;
+            this.t21.Text = "tabPage9";
+            this.t21.UseVisualStyleBackColor = true;
+            // 
+            // t5
+            // 
+            this.t5.Location = new System.Drawing.Point(4, 22);
+            this.t5.Name = "t5";
+            this.t5.Padding = new System.Windows.Forms.Padding(3);
+            this.t5.Size = new System.Drawing.Size(893, 414);
+            this.t5.TabIndex = 12;
+            this.t5.Text = "tabPage10";
+            this.t5.UseVisualStyleBackColor = true;
+            // 
+            // t6
+            // 
+            this.t6.Location = new System.Drawing.Point(4, 22);
+            this.t6.Name = "t6";
+            this.t6.Padding = new System.Windows.Forms.Padding(3);
+            this.t6.Size = new System.Drawing.Size(893, 414);
+            this.t6.TabIndex = 13;
+            this.t6.Text = "tabPage11";
+            this.t6.UseVisualStyleBackColor = true;
+            // 
+            // t7
+            // 
+            this.t7.Location = new System.Drawing.Point(4, 22);
+            this.t7.Name = "t7";
+            this.t7.Padding = new System.Windows.Forms.Padding(3);
+            this.t7.Size = new System.Drawing.Size(893, 414);
+            this.t7.TabIndex = 14;
+            this.t7.Text = "tabPage12";
+            this.t7.UseVisualStyleBackColor = true;
+            // 
+            // t8
+            // 
+            this.t8.Location = new System.Drawing.Point(4, 22);
+            this.t8.Name = "t8";
+            this.t8.Padding = new System.Windows.Forms.Padding(3);
+            this.t8.Size = new System.Drawing.Size(893, 414);
+            this.t8.TabIndex = 15;
+            this.t8.Text = "tabPage13";
+            this.t8.UseVisualStyleBackColor = true;
+            // 
+            // t9
+            // 
+            this.t9.Location = new System.Drawing.Point(4, 22);
+            this.t9.Name = "t9";
+            this.t9.Padding = new System.Windows.Forms.Padding(3);
+            this.t9.Size = new System.Drawing.Size(893, 414);
+            this.t9.TabIndex = 16;
+            this.t9.Text = "tabPage14";
+            this.t9.UseVisualStyleBackColor = true;
+            // 
+            // t10
+            // 
+            this.t10.Location = new System.Drawing.Point(4, 22);
+            this.t10.Name = "t10";
+            this.t10.Padding = new System.Windows.Forms.Padding(3);
+            this.t10.Size = new System.Drawing.Size(893, 414);
+            this.t10.TabIndex = 17;
+            this.t10.Text = "tabPage15";
+            this.t10.UseVisualStyleBackColor = true;
+            // 
+            // t11
+            // 
+            this.t11.Location = new System.Drawing.Point(4, 22);
+            this.t11.Name = "t11";
+            this.t11.Padding = new System.Windows.Forms.Padding(3);
+            this.t11.Size = new System.Drawing.Size(893, 414);
+            this.t11.TabIndex = 18;
+            this.t11.Text = "tabPage16";
+            this.t11.UseVisualStyleBackColor = true;
+            // 
+            // t12
+            // 
+            this.t12.Location = new System.Drawing.Point(4, 22);
+            this.t12.Name = "t12";
+            this.t12.Padding = new System.Windows.Forms.Padding(3);
+            this.t12.Size = new System.Drawing.Size(893, 414);
+            this.t12.TabIndex = 19;
+            this.t12.Text = "tabPage17";
+            this.t12.UseVisualStyleBackColor = true;
+            // 
+            // t13
+            // 
+            this.t13.Location = new System.Drawing.Point(4, 22);
+            this.t13.Name = "t13";
+            this.t13.Padding = new System.Windows.Forms.Padding(3);
+            this.t13.Size = new System.Drawing.Size(893, 414);
+            this.t13.TabIndex = 20;
+            this.t13.Text = "tabPage18";
+            this.t13.UseVisualStyleBackColor = true;
+            // 
+            // exitButton
+            // 
+            this.exitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.exitButton.AutoSize = true;
+            this.exitButton.Font = new System.Drawing.Font("SketchFlow Print", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.exitButton.Location = new System.Drawing.Point(1313, 76);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(89, 40);
+            this.exitButton.TabIndex = 0;
+            this.exitButton.Text = "Exit";
+            this.exitButton.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.label1.Location = new System.Drawing.Point(372, 120);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(497, 85);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Hackerman Coding";
+            // 
+            // introButton
+            // 
+            this.introButton.AutoSize = true;
+            this.introButton.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.introButton.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.introButton.Location = new System.Drawing.Point(168, 347);
+            this.introButton.Name = "introButton";
+            this.introButton.Size = new System.Drawing.Size(67, 23);
+            this.introButton.TabIndex = 2;
+            this.introButton.Text = "Intro";
+            this.introButton.Click += new System.EventHandler(this.introButton_Click);
+            // 
+            // level_1_Button
+            // 
+            this.level_1_Button.AutoSize = true;
+            this.level_1_Button.Enabled = false;
+            this.level_1_Button.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.level_1_Button.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.level_1_Button.Location = new System.Drawing.Point(172, 405);
+            this.level_1_Button.Name = "level_1_Button";
+            this.level_1_Button.Size = new System.Drawing.Size(219, 23);
+            this.level_1_Button.TabIndex = 3;
+            this.level_1_Button.Text = "Level 1 Data Types";
+            this.level_1_Button.Click += new System.EventHandler(this.level_1_Button_Click);
+            // 
+            // level_2_Button
+            // 
+            this.level_2_Button.AutoSize = true;
+            this.level_2_Button.Enabled = false;
+            this.level_2_Button.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.level_2_Button.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.level_2_Button.Location = new System.Drawing.Point(176, 465);
+            this.level_2_Button.Name = "level_2_Button";
+            this.level_2_Button.Size = new System.Drawing.Size(248, 23);
+            this.level_2_Button.TabIndex = 4;
+            this.level_2_Button.Text = "Level 2 If Statements";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 400);
+            this.ClientSize = new System.Drawing.Size(1452, 842);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
@@ -392,19 +452,19 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.t1.ResumeLayout(false);
-            this.t3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.sol1)).EndInit();
+            this.t1.PerformLayout();
             this.t2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sol1)).EndInit();
+            this.t3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button Start;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage t1;
         private System.Windows.Forms.TabPage t3;
@@ -432,6 +492,11 @@
         private System.Windows.Forms.PictureBox sol1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label exitButton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label introButton;
+        private System.Windows.Forms.Label level_1_Button;
+        private System.Windows.Forms.Label level_2_Button;
     }
 }
 
