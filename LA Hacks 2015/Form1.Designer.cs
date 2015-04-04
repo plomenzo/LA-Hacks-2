@@ -33,13 +33,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.t1 = new System.Windows.Forms.TabPage();
+            this.level_4_Button = new System.Windows.Forms.Label();
+            this.level_3_Button = new System.Windows.Forms.Label();
+            this.level_2_Button = new System.Windows.Forms.Label();
+            this.level_1_Button = new System.Windows.Forms.Label();
+            this.introButton = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.exitButton = new System.Windows.Forms.Label();
             this.t2 = new System.Windows.Forms.TabPage();
             this.Skip2 = new System.Windows.Forms.Label();
             this.backtoMM2 = new System.Windows.Forms.Label();
             this.exitButton2 = new System.Windows.Forms.Label();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.t3 = new System.Windows.Forms.TabPage();
-            this.TEST = new System.Windows.Forms.Button();
             this.t4 = new System.Windows.Forms.TabPage();
             this.t14 = new System.Windows.Forms.TabPage();
             this.t15 = new System.Windows.Forms.TabPage();
@@ -59,19 +66,15 @@
             this.t12 = new System.Windows.Forms.TabPage();
             this.t13 = new System.Windows.Forms.TabPage();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.t1 = new System.Windows.Forms.TabPage();
-            this.level_3_Button = new System.Windows.Forms.Label();
-            this.level_2_Button = new System.Windows.Forms.Label();
-            this.level_1_Button = new System.Windows.Forms.Label();
-            this.introButton = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.exitButton = new System.Windows.Forms.Label();
-            this.level_4_Button = new System.Windows.Forms.Label();
+            this.gotot4 = new System.Windows.Forms.Label();
+            this.labelgohome = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
+            this.t1.SuspendLayout();
             this.t2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.t3.SuspendLayout();
-            this.t1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -105,6 +108,115 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1387, 828);
             this.tabControl1.TabIndex = 2;
+            // 
+            // t1
+            // 
+            this.t1.BackgroundImage = global::LA_Hacks_2015.Properties.Resources.Maintitle;
+            this.t1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.t1.Controls.Add(this.level_4_Button);
+            this.t1.Controls.Add(this.level_3_Button);
+            this.t1.Controls.Add(this.level_2_Button);
+            this.t1.Controls.Add(this.level_1_Button);
+            this.t1.Controls.Add(this.introButton);
+            this.t1.Controls.Add(this.label1);
+            this.t1.Controls.Add(this.exitButton);
+            this.t1.Location = new System.Drawing.Point(4, 22);
+            this.t1.Name = "t1";
+            this.t1.Padding = new System.Windows.Forms.Padding(3);
+            this.t1.Size = new System.Drawing.Size(1379, 802);
+            this.t1.TabIndex = 0;
+            this.t1.Text = "tabPage1";
+            this.t1.UseVisualStyleBackColor = true;
+            this.t1.Click += new System.EventHandler(this.t1_Click);
+            // 
+            // level_4_Button
+            // 
+            this.level_4_Button.AutoSize = true;
+            this.level_4_Button.Enabled = false;
+            this.level_4_Button.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.level_4_Button.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.level_4_Button.Location = new System.Drawing.Point(1040, 393);
+            this.level_4_Button.Name = "level_4_Button";
+            this.level_4_Button.Size = new System.Drawing.Size(285, 23);
+            this.level_4_Button.TabIndex = 6;
+            this.level_4_Button.Text = "Level 4 Advanced Loops";
+            this.level_4_Button.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // level_3_Button
+            // 
+            this.level_3_Button.AutoSize = true;
+            this.level_3_Button.Enabled = false;
+            this.level_3_Button.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.level_3_Button.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.level_3_Button.Location = new System.Drawing.Point(1040, 342);
+            this.level_3_Button.Name = "level_3_Button";
+            this.level_3_Button.Size = new System.Drawing.Size(167, 23);
+            this.level_3_Button.TabIndex = 5;
+            this.level_3_Button.Text = "Level 3 Loops";
+            this.level_3_Button.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // level_2_Button
+            // 
+            this.level_2_Button.AutoSize = true;
+            this.level_2_Button.Enabled = false;
+            this.level_2_Button.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.level_2_Button.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.level_2_Button.Location = new System.Drawing.Point(1040, 283);
+            this.level_2_Button.Name = "level_2_Button";
+            this.level_2_Button.Size = new System.Drawing.Size(248, 23);
+            this.level_2_Button.TabIndex = 4;
+            this.level_2_Button.Text = "Level 2 If Statements";
+            this.level_2_Button.Click += new System.EventHandler(this.level_2_Button_Click_1);
+            // 
+            // level_1_Button
+            // 
+            this.level_1_Button.AutoSize = true;
+            this.level_1_Button.Enabled = false;
+            this.level_1_Button.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.level_1_Button.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.level_1_Button.Location = new System.Drawing.Point(1036, 227);
+            this.level_1_Button.Name = "level_1_Button";
+            this.level_1_Button.Size = new System.Drawing.Size(219, 23);
+            this.level_1_Button.TabIndex = 3;
+            this.level_1_Button.Text = "Level 1 Data Types";
+            this.level_1_Button.Click += new System.EventHandler(this.level_1_Button_Click);
+            // 
+            // introButton
+            // 
+            this.introButton.AutoSize = true;
+            this.introButton.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.introButton.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.introButton.Location = new System.Drawing.Point(1032, 169);
+            this.introButton.Name = "introButton";
+            this.introButton.Size = new System.Drawing.Size(67, 23);
+            this.introButton.TabIndex = 2;
+            this.introButton.Text = "Intro";
+            this.introButton.Click += new System.EventHandler(this.introButton_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.label1.Location = new System.Drawing.Point(56, 67);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(497, 85);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Hackerman Coding";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // exitButton
+            // 
+            this.exitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.exitButton.AutoSize = true;
+            this.exitButton.Font = new System.Drawing.Font("SketchFlow Print", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.exitButton.Location = new System.Drawing.Point(1261, 53);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(89, 40);
+            this.exitButton.TabIndex = 0;
+            this.exitButton.Text = "Exit";
+            this.exitButton.Click += new System.EventHandler(this.label1_Click);
             // 
             // t2
             // 
@@ -165,7 +277,10 @@
             // 
             // t3
             // 
-            this.t3.Controls.Add(this.TEST);
+            this.t3.Controls.Add(this.panel1);
+            this.t3.Controls.Add(this.textBox1);
+            this.t3.Controls.Add(this.labelgohome);
+            this.t3.Controls.Add(this.gotot4);
             this.t3.Location = new System.Drawing.Point(4, 22);
             this.t3.Name = "t3";
             this.t3.Padding = new System.Windows.Forms.Padding(3);
@@ -173,15 +288,6 @@
             this.t3.TabIndex = 2;
             this.t3.Text = "tabPage3";
             this.t3.UseVisualStyleBackColor = true;
-            // 
-            // TEST
-            // 
-            this.TEST.Location = new System.Drawing.Point(375, 154);
-            this.TEST.Name = "TEST";
-            this.TEST.Size = new System.Drawing.Size(75, 23);
-            this.TEST.TabIndex = 0;
-            this.TEST.Text = "TEST";
-            this.TEST.UseVisualStyleBackColor = true;
             // 
             // t4
             // 
@@ -367,114 +473,49 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // t1
+            // gotot4
             // 
-            this.t1.BackgroundImage = global::LA_Hacks_2015.Properties.Resources.Maintitle;
-            this.t1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.t1.Controls.Add(this.level_4_Button);
-            this.t1.Controls.Add(this.level_3_Button);
-            this.t1.Controls.Add(this.level_2_Button);
-            this.t1.Controls.Add(this.level_1_Button);
-            this.t1.Controls.Add(this.introButton);
-            this.t1.Controls.Add(this.label1);
-            this.t1.Controls.Add(this.exitButton);
-            this.t1.Location = new System.Drawing.Point(4, 22);
-            this.t1.Name = "t1";
-            this.t1.Padding = new System.Windows.Forms.Padding(3);
-            this.t1.Size = new System.Drawing.Size(1379, 802);
-            this.t1.TabIndex = 0;
-            this.t1.Text = "tabPage1";
-            this.t1.UseVisualStyleBackColor = true;
-            this.t1.Click += new System.EventHandler(this.t1_Click);
+            this.gotot4.AutoSize = true;
+            this.gotot4.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gotot4.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.gotot4.Location = new System.Drawing.Point(1224, 44);
+            this.gotot4.Name = "gotot4";
+            this.gotot4.Size = new System.Drawing.Size(127, 23);
+            this.gotot4.TabIndex = 3;
+            this.gotot4.Text = "I\'m ready!";
+            this.gotot4.Click += new System.EventHandler(this.gotot4_Click);
             // 
-            // level_3_Button
+            // labelgohome
             // 
-            this.level_3_Button.AutoSize = true;
-            this.level_3_Button.Enabled = false;
-            this.level_3_Button.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.level_3_Button.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.level_3_Button.Location = new System.Drawing.Point(1040, 342);
-            this.level_3_Button.Name = "level_3_Button";
-            this.level_3_Button.Size = new System.Drawing.Size(167, 23);
-            this.level_3_Button.TabIndex = 5;
-            this.level_3_Button.Text = "Level 3 Loops";
-            this.level_3_Button.Click += new System.EventHandler(this.label2_Click);
+            this.labelgohome.AutoSize = true;
+            this.labelgohome.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelgohome.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.labelgohome.Location = new System.Drawing.Point(8, 25);
+            this.labelgohome.Name = "labelgohome";
+            this.labelgohome.Size = new System.Drawing.Size(173, 23);
+            this.labelgohome.TabIndex = 4;
+            this.labelgohome.Text = "Take me home!";
+            this.labelgohome.Click += new System.EventHandler(this.labelgohome_Click);
             // 
-            // level_2_Button
+            // textBox1
             // 
-            this.level_2_Button.AutoSize = true;
-            this.level_2_Button.Enabled = false;
-            this.level_2_Button.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.level_2_Button.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.level_2_Button.Location = new System.Drawing.Point(1040, 283);
-            this.level_2_Button.Name = "level_2_Button";
-            this.level_2_Button.Size = new System.Drawing.Size(248, 23);
-            this.level_2_Button.TabIndex = 4;
-            this.level_2_Button.Text = "Level 2 If Statements";
-            this.level_2_Button.Click += new System.EventHandler(this.level_2_Button_Click_1);
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(498, 138);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(618, 279);
+            this.textBox1.TabIndex = 6;
+            this.textBox1.Text = resources.GetString("textBox1.Text");
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
-            // level_1_Button
+            // panel1
             // 
-            this.level_1_Button.AutoSize = true;
-            this.level_1_Button.Enabled = false;
-            this.level_1_Button.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.level_1_Button.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.level_1_Button.Location = new System.Drawing.Point(1036, 227);
-            this.level_1_Button.Name = "level_1_Button";
-            this.level_1_Button.Size = new System.Drawing.Size(219, 23);
-            this.level_1_Button.TabIndex = 3;
-            this.level_1_Button.Text = "Level 1 Data Types";
-            this.level_1_Button.Click += new System.EventHandler(this.level_1_Button_Click);
-            // 
-            // introButton
-            // 
-            this.introButton.AutoSize = true;
-            this.introButton.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.introButton.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.introButton.Location = new System.Drawing.Point(1032, 169);
-            this.introButton.Name = "introButton";
-            this.introButton.Size = new System.Drawing.Size(67, 23);
-            this.introButton.TabIndex = 2;
-            this.introButton.Text = "Intro";
-            this.introButton.Click += new System.EventHandler(this.introButton_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe Print", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label1.Location = new System.Drawing.Point(56, 67);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(497, 85);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Hackerman Coding";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
-            // 
-            // exitButton
-            // 
-            this.exitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.exitButton.AutoSize = true;
-            this.exitButton.Font = new System.Drawing.Font("SketchFlow Print", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitButton.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.exitButton.Location = new System.Drawing.Point(1261, 53);
-            this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(89, 40);
-            this.exitButton.TabIndex = 0;
-            this.exitButton.Text = "Exit";
-            this.exitButton.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // level_4_Button
-            // 
-            this.level_4_Button.AutoSize = true;
-            this.level_4_Button.Enabled = false;
-            this.level_4_Button.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.level_4_Button.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.level_4_Button.Location = new System.Drawing.Point(1040, 393);
-            this.level_4_Button.Name = "level_4_Button";
-            this.level_4_Button.Size = new System.Drawing.Size(285, 23);
-            this.level_4_Button.TabIndex = 6;
-            this.level_4_Button.Text = "Level 4 Advanced Loops";
-            this.level_4_Button.Click += new System.EventHandler(this.label3_Click);
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(72, 67);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(340, 231);
+            this.panel1.TabIndex = 7;
             // 
             // Form1
             // 
@@ -488,12 +529,13 @@
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tabControl1.ResumeLayout(false);
+            this.t1.ResumeLayout(false);
+            this.t1.PerformLayout();
             this.t2.ResumeLayout(false);
             this.t2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.t3.ResumeLayout(false);
-            this.t1.ResumeLayout(false);
-            this.t1.PerformLayout();
+            this.t3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -502,7 +544,6 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage t3;
-        private System.Windows.Forms.Button TEST;
         private System.Windows.Forms.TabPage t4;
         private System.Windows.Forms.TabPage t14;
         private System.Windows.Forms.TabPage t15;
@@ -535,6 +576,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label exitButton;
         private System.Windows.Forms.Label level_4_Button;
+        private System.Windows.Forms.Label labelgohome;
+        private System.Windows.Forms.Label gotot4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

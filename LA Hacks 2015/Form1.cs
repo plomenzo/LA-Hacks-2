@@ -17,6 +17,8 @@ namespace LA_Hacks_2015
         {
             this.Hide();
             InitializeComponent();
+            this.Cursor = Cursors.Hand;
+
 
             Thread t = new Thread(new ThreadStart(SplashStart));
             t.Start();
@@ -138,6 +140,26 @@ namespace LA_Hacks_2015
         private void level_2_Button_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gotot4_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab("t4");
+        }
+
+        private void labelgohome_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab("t1");
         }
     }
 }
