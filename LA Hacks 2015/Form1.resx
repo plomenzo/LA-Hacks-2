@@ -117,6 +117,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>You're going to need to use variables as your first step to set me free! Variables are like containters that can hold certain kinds of data, numbers, text, decimal numbers and more! In C#, cariables that holds text are called Strings, ones that hold whole numbers are called inegers, or ints for short, and decimal numbers are called doubles. I think thats all you'll need for you first challage, click I'm ready to test your skill!
+
+
+</value>
+  </data>
+  <data name="test1Text.Text" xml:space="preserve">
+    <value>Great Job! Now let's see what you've got, Kid!
+Now it's time to put your newfound knowledge to the test!
+
+I want you to match the boxes to the right. For example, if you see a word that can be used as a string then I want you to drag it in the string box. Or if you see a number, drag it in the int box. Good luck!</value>
+  </data>
+  <metadata name="timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3510,21 +3525,6 @@
         7T4FS2X5e1WFgVuqiuepTVztoyairHmP/CjdJ/59I/8AvmivTPKX+6KKOVGvPI//2Q==
 </value>
   </data>
-  <data name="textBox1.Text" xml:space="preserve">
-    <value>You're going to need to use variables as your first step to set me free! Variables are like containters that can hold certain kinds of data, numbers, text, decimal numbers and more! In C#, cariables that holds text are called Strings, ones that hold whole numbers are called inegers, or ints for short, and decimal numbers are called doubles. I think thats all you'll need for you first challage, click I'm ready to test your skill!
-
-
-</value>
-  </data>
-  <data name="test1Text.Text" xml:space="preserve">
-    <value>Great Job! Now let's see what you've got, Kid!
-Now it's time to put your newfound knowledge to the test!
-
-I want you to match the boxes to the right. For example, if you see a word that can be used as a string then I want you to drag it in the string box. Or if you see a number, drag it in the int box. Good luck!</value>
-  </data>
-  <metadata name="timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

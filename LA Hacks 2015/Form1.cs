@@ -336,7 +336,10 @@ namespace LA_Hacks_2015
             if (duration >= 4 && duration < 9)
             {
                 t2.BackgroundImage = Properties.Resources.Panel2;
-                //repositionButton.PerformClick();
+                introSpeechPanel.Location = new Point(864, 43);
+                introSpeechPanel.BackgroundImage = Properties.Resources.speakingBubble;
+                bubbleTextIntro.Text = "Especially with a\n bomb attached\n to your chest";
+                introSpeechPanel.Size = new Size(250, 233);
             }
             else if (duration >= 9 && duration < 14)
             {

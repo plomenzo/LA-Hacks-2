@@ -107,6 +107,7 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\speakingBubble.png" />
     <None Include="Resources\speechBub.png" />
     <None Include="Resources\Speech-Bubble.png" />
     <None Include="Resources\Panel2.jpg" />

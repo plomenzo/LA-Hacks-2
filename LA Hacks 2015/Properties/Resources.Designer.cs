@@ -183,6 +183,16 @@ namespace LA_Hacks_2015.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap speakingBubble {
+            get {
+                object obj = ResourceManager.GetObject("speakingBubble", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap speechBub {
             get {
                 object obj = ResourceManager.GetObject("speechBub", resourceCulture);

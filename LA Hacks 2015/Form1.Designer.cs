@@ -74,7 +74,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.Label();
             this.t2 = new System.Windows.Forms.TabPage();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.introSpeechPanel = new System.Windows.Forms.Panel();
+            this.bubbleTextIntro = new System.Windows.Forms.Label();
             this.nextButton2 = new System.Windows.Forms.Label();
             this.Skip2 = new System.Windows.Forms.Label();
             this.backtoMM2 = new System.Windows.Forms.Label();
@@ -90,13 +91,12 @@
             this.blankTest1_3 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.bubbleTextIntro1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.t3.SuspendLayout();
             this.t4.SuspendLayout();
             this.t1.SuspendLayout();
             this.t2.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.introSpeechPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sol2Test1_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sol1Test1_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sol4Test1_1)).BeginInit();
@@ -590,7 +590,7 @@
             // t2
             // 
             this.t2.BackgroundImage = global::LA_Hacks_2015.Properties.Resources.Panel1;
-            this.t2.Controls.Add(this.panel2);
+            this.t2.Controls.Add(this.introSpeechPanel);
             this.t2.Controls.Add(this.nextButton2);
             this.t2.Controls.Add(this.Skip2);
             this.t2.Controls.Add(this.backtoMM2);
@@ -603,14 +603,25 @@
             this.t2.Text = "t2";
             this.t2.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // introSpeechPanel
             // 
-            this.panel2.BackgroundImage = global::LA_Hacks_2015.Properties.Resources.speechBub;
-            this.panel2.Controls.Add(this.bubbleTextIntro1);
-            this.panel2.Location = new System.Drawing.Point(58, 90);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(314, 233);
-            this.panel2.TabIndex = 10;
+            this.introSpeechPanel.BackgroundImage = global::LA_Hacks_2015.Properties.Resources.speechBub;
+            this.introSpeechPanel.Controls.Add(this.bubbleTextIntro);
+            this.introSpeechPanel.Location = new System.Drawing.Point(49, 90);
+            this.introSpeechPanel.Name = "introSpeechPanel";
+            this.introSpeechPanel.Size = new System.Drawing.Size(305, 233);
+            this.introSpeechPanel.TabIndex = 10;
+            // 
+            // bubbleTextIntro
+            // 
+            this.bubbleTextIntro.AutoSize = true;
+            this.bubbleTextIntro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bubbleTextIntro.Location = new System.Drawing.Point(45, 58);
+            this.bubbleTextIntro.Name = "bubbleTextIntro";
+            this.bubbleTextIntro.Size = new System.Drawing.Size(200, 72);
+            this.bubbleTextIntro.TabIndex = 0;
+            this.bubbleTextIntro.Text = "Well looks like I finally\r\n caught you in my nest \r\nHackman... Lets see you \r\nget" +
+    " out of this one...\".";
             // 
             // nextButton2
             // 
@@ -777,17 +788,6 @@
             this.pictureBox2.TabIndex = 30;
             this.pictureBox2.TabStop = false;
             // 
-            // bubbleTextIntro1
-            // 
-            this.bubbleTextIntro1.AutoSize = true;
-            this.bubbleTextIntro1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bubbleTextIntro1.Location = new System.Drawing.Point(45, 56);
-            this.bubbleTextIntro1.Name = "bubbleTextIntro1";
-            this.bubbleTextIntro1.Size = new System.Drawing.Size(200, 72);
-            this.bubbleTextIntro1.TabIndex = 0;
-            this.bubbleTextIntro1.Text = "Well looks like I finally\r\n caught you in my nest \r\nHackman... Lets see you \r\nget" +
-    " out of this one...\".";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -809,8 +809,8 @@
             this.t1.PerformLayout();
             this.t2.ResumeLayout(false);
             this.t2.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.introSpeechPanel.ResumeLayout(false);
+            this.introSpeechPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sol2Test1_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sol1Test1_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sol4Test1_1)).EndInit();
@@ -883,8 +883,8 @@
         private System.Windows.Forms.PictureBox sol1Test1_1;
         private System.Windows.Forms.PictureBox sol4Test1_1;
         private System.Windows.Forms.PictureBox sol3Test1_1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label bubbleTextIntro1;
+        private System.Windows.Forms.Panel introSpeechPanel;
+        private System.Windows.Forms.Label bubbleTextIntro;
     }
 }
 
