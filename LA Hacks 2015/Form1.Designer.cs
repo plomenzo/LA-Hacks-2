@@ -73,13 +73,6 @@
             this.introButton = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.Label();
-            this.t2 = new System.Windows.Forms.TabPage();
-            this.introSpeechPanel = new System.Windows.Forms.Panel();
-            this.bubbleTextIntro = new System.Windows.Forms.Label();
-            this.nextButton2 = new System.Windows.Forms.Label();
-            this.Skip2 = new System.Windows.Forms.Label();
-            this.backtoMM2 = new System.Windows.Forms.Label();
-            this.exitButton2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.sol2Test1_1 = new System.Windows.Forms.PictureBox();
             this.sol1Test1_1 = new System.Windows.Forms.PictureBox();
@@ -91,12 +84,17 @@
             this.blankTest1_3 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.exitButton2 = new System.Windows.Forms.Label();
+            this.backtoMM2 = new System.Windows.Forms.Label();
+            this.Skip2 = new System.Windows.Forms.Label();
+            this.nextButton2 = new System.Windows.Forms.Label();
+            this.introSpeechPanel = new System.Windows.Forms.Panel();
+            this.bubbleTextIntro = new System.Windows.Forms.Label();
+            this.t2 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.t3.SuspendLayout();
             this.t4.SuspendLayout();
             this.t1.SuspendLayout();
-            this.t2.SuspendLayout();
-            this.introSpeechPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sol2Test1_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sol1Test1_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sol4Test1_1)).BeginInit();
@@ -107,6 +105,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.blankTest1_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.introSpeechPanel.SuspendLayout();
+            this.t2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -587,86 +587,6 @@
             this.exitButton.Text = "Exit";
             this.exitButton.Click += new System.EventHandler(this.label1_Click);
             // 
-            // t2
-            // 
-            this.t2.BackgroundImage = global::LA_Hacks_2015.Properties.Resources.Panel1;
-            this.t2.Controls.Add(this.introSpeechPanel);
-            this.t2.Controls.Add(this.nextButton2);
-            this.t2.Controls.Add(this.Skip2);
-            this.t2.Controls.Add(this.backtoMM2);
-            this.t2.Controls.Add(this.exitButton2);
-            this.t2.Location = new System.Drawing.Point(4, 22);
-            this.t2.Name = "t2";
-            this.t2.Padding = new System.Windows.Forms.Padding(3);
-            this.t2.Size = new System.Drawing.Size(1277, 786);
-            this.t2.TabIndex = 1;
-            this.t2.Text = "t2";
-            this.t2.UseVisualStyleBackColor = true;
-            // 
-            // introSpeechPanel
-            // 
-            this.introSpeechPanel.BackgroundImage = global::LA_Hacks_2015.Properties.Resources.speechBub;
-            this.introSpeechPanel.Controls.Add(this.bubbleTextIntro);
-            this.introSpeechPanel.Location = new System.Drawing.Point(49, 90);
-            this.introSpeechPanel.Name = "introSpeechPanel";
-            this.introSpeechPanel.Size = new System.Drawing.Size(305, 233);
-            this.introSpeechPanel.TabIndex = 10;
-            // 
-            // bubbleTextIntro
-            // 
-            this.bubbleTextIntro.AutoSize = true;
-            this.bubbleTextIntro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bubbleTextIntro.Location = new System.Drawing.Point(45, 58);
-            this.bubbleTextIntro.Name = "bubbleTextIntro";
-            this.bubbleTextIntro.Size = new System.Drawing.Size(200, 72);
-            this.bubbleTextIntro.TabIndex = 0;
-            this.bubbleTextIntro.Text = "Well looks like I finally\r\n caught you in my nest \r\nHackman... Lets see you \r\nget" +
-    " out of this one...\".";
-            // 
-            // nextButton2
-            // 
-            this.nextButton2.AutoSize = true;
-            this.nextButton2.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nextButton2.Location = new System.Drawing.Point(111, 742);
-            this.nextButton2.Name = "nextButton2";
-            this.nextButton2.Size = new System.Drawing.Size(57, 23);
-            this.nextButton2.TabIndex = 9;
-            this.nextButton2.Text = "Next";
-            this.nextButton2.Click += new System.EventHandler(this.nextButton2_Click);
-            // 
-            // Skip2
-            // 
-            this.Skip2.AutoSize = true;
-            this.Skip2.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Skip2.Location = new System.Drawing.Point(628, 64);
-            this.Skip2.Name = "Skip2";
-            this.Skip2.Size = new System.Drawing.Size(60, 23);
-            this.Skip2.TabIndex = 8;
-            this.Skip2.Text = "Skip";
-            this.Skip2.Click += new System.EventHandler(this.Skip2_Click);
-            // 
-            // backtoMM2
-            // 
-            this.backtoMM2.AutoSize = true;
-            this.backtoMM2.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backtoMM2.Location = new System.Drawing.Point(76, 64);
-            this.backtoMM2.Name = "backtoMM2";
-            this.backtoMM2.Size = new System.Drawing.Size(227, 23);
-            this.backtoMM2.TabIndex = 7;
-            this.backtoMM2.Text = "Back to Main Menu";
-            this.backtoMM2.Click += new System.EventHandler(this.backtoMM2_Click);
-            // 
-            // exitButton2
-            // 
-            this.exitButton2.AutoSize = true;
-            this.exitButton2.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitButton2.Location = new System.Drawing.Point(1184, 64);
-            this.exitButton2.Name = "exitButton2";
-            this.exitButton2.Size = new System.Drawing.Size(52, 23);
-            this.exitButton2.TabIndex = 5;
-            this.exitButton2.Text = "Exit";
-            this.exitButton2.Click += new System.EventHandler(this.exitButton2_Click);
-            // 
             // panel1
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
@@ -788,6 +708,85 @@
             this.pictureBox2.TabIndex = 30;
             this.pictureBox2.TabStop = false;
             // 
+            // exitButton2
+            // 
+            this.exitButton2.AutoSize = true;
+            this.exitButton2.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton2.Location = new System.Drawing.Point(1184, 64);
+            this.exitButton2.Name = "exitButton2";
+            this.exitButton2.Size = new System.Drawing.Size(52, 23);
+            this.exitButton2.TabIndex = 5;
+            this.exitButton2.Text = "Exit";
+            this.exitButton2.Click += new System.EventHandler(this.exitButton2_Click);
+            // 
+            // backtoMM2
+            // 
+            this.backtoMM2.AutoSize = true;
+            this.backtoMM2.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backtoMM2.Location = new System.Drawing.Point(76, 64);
+            this.backtoMM2.Name = "backtoMM2";
+            this.backtoMM2.Size = new System.Drawing.Size(227, 23);
+            this.backtoMM2.TabIndex = 7;
+            this.backtoMM2.Text = "Back to Main Menu";
+            this.backtoMM2.Click += new System.EventHandler(this.backtoMM2_Click);
+            // 
+            // Skip2
+            // 
+            this.Skip2.AutoSize = true;
+            this.Skip2.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Skip2.Location = new System.Drawing.Point(689, 64);
+            this.Skip2.Name = "Skip2";
+            this.Skip2.Size = new System.Drawing.Size(60, 23);
+            this.Skip2.TabIndex = 8;
+            this.Skip2.Text = "Skip";
+            this.Skip2.Click += new System.EventHandler(this.Skip2_Click);
+            // 
+            // nextButton2
+            // 
+            this.nextButton2.AutoSize = true;
+            this.nextButton2.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nextButton2.Location = new System.Drawing.Point(111, 742);
+            this.nextButton2.Name = "nextButton2";
+            this.nextButton2.Size = new System.Drawing.Size(57, 23);
+            this.nextButton2.TabIndex = 9;
+            this.nextButton2.Text = "Next";
+            this.nextButton2.Click += new System.EventHandler(this.nextButton2_Click);
+            // 
+            // introSpeechPanel
+            // 
+            this.introSpeechPanel.BackgroundImage = global::LA_Hacks_2015.Properties.Resources.speechBub;
+            this.introSpeechPanel.Controls.Add(this.bubbleTextIntro);
+            this.introSpeechPanel.Location = new System.Drawing.Point(350, 150);
+            this.introSpeechPanel.Name = "introSpeechPanel";
+            this.introSpeechPanel.Size = new System.Drawing.Size(302, 230);
+            this.introSpeechPanel.TabIndex = 10;
+            // 
+            // bubbleTextIntro
+            // 
+            this.bubbleTextIntro.AutoSize = true;
+            this.bubbleTextIntro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bubbleTextIntro.Location = new System.Drawing.Point(31, 80);
+            this.bubbleTextIntro.Name = "bubbleTextIntro";
+            this.bubbleTextIntro.Size = new System.Drawing.Size(246, 18);
+            this.bubbleTextIntro.TabIndex = 0;
+            this.bubbleTextIntro.Text = "Must...\\n Break...\\n Out of here!";
+            // 
+            // t2
+            // 
+            this.t2.BackgroundImage = global::LA_Hacks_2015.Properties.Resources.Panel8;
+            this.t2.Controls.Add(this.introSpeechPanel);
+            this.t2.Controls.Add(this.nextButton2);
+            this.t2.Controls.Add(this.Skip2);
+            this.t2.Controls.Add(this.backtoMM2);
+            this.t2.Controls.Add(this.exitButton2);
+            this.t2.Location = new System.Drawing.Point(4, 22);
+            this.t2.Name = "t2";
+            this.t2.Padding = new System.Windows.Forms.Padding(3);
+            this.t2.Size = new System.Drawing.Size(1277, 786);
+            this.t2.TabIndex = 1;
+            this.t2.Text = "t2";
+            this.t2.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -807,10 +806,6 @@
             this.t4.PerformLayout();
             this.t1.ResumeLayout(false);
             this.t1.PerformLayout();
-            this.t2.ResumeLayout(false);
-            this.t2.PerformLayout();
-            this.introSpeechPanel.ResumeLayout(false);
-            this.introSpeechPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sol2Test1_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sol1Test1_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sol4Test1_1)).EndInit();
@@ -821,6 +816,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.blankTest1_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.introSpeechPanel.ResumeLayout(false);
+            this.introSpeechPanel.PerformLayout();
+            this.t2.ResumeLayout(false);
+            this.t2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -847,10 +846,6 @@
         private System.Windows.Forms.TabPage t11;
         private System.Windows.Forms.TabPage t12;
         private System.Windows.Forms.TabPage t13;
-        private System.Windows.Forms.TabPage t2;
-        private System.Windows.Forms.Label exitButton2;
-        private System.Windows.Forms.Label backtoMM2;
-        private System.Windows.Forms.Label Skip2;
         private System.Windows.Forms.TabPage t1;
         private System.Windows.Forms.Label level_3_Button;
         private System.Windows.Forms.Label level_2_Button;
@@ -876,15 +871,19 @@
         private System.Windows.Forms.PictureBox blankTest1_1;
         private System.Windows.Forms.PictureBox blankTest1_4;
         private System.Windows.Forms.PictureBox blankTest1_3;
-        private System.Windows.Forms.Label nextButton2;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Panel speechPanel2;
         private System.Windows.Forms.PictureBox sol2Test1_1;
         private System.Windows.Forms.PictureBox sol1Test1_1;
         private System.Windows.Forms.PictureBox sol4Test1_1;
         private System.Windows.Forms.PictureBox sol3Test1_1;
+        private System.Windows.Forms.TabPage t2;
         private System.Windows.Forms.Panel introSpeechPanel;
         private System.Windows.Forms.Label bubbleTextIntro;
+        private System.Windows.Forms.Label nextButton2;
+        private System.Windows.Forms.Label Skip2;
+        private System.Windows.Forms.Label backtoMM2;
+        private System.Windows.Forms.Label exitButton2;
     }
 }
 

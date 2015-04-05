@@ -333,7 +333,7 @@ namespace LA_Hacks_2015
         private void timer1_Tick(object sender, EventArgs e)
         {
             duration++;
-            if (duration >= 4 && duration < 9)
+            if (duration >= 4 && duration < 9) // goes into slide 2
             {
                 t2.BackgroundImage = Properties.Resources.Panel2;
                 introSpeechPanel.Location = new Point(864, 43);
@@ -341,17 +341,35 @@ namespace LA_Hacks_2015
                 bubbleTextIntro.Text = "Especially with a\n bomb attached\n to your chest";
                 introSpeechPanel.Size = new Size(250, 233);
             }
-            else if (duration >= 9 && duration < 14)
+            else if (duration >= 9 && duration < 14) // goes into slide 3
             {
                 t2.BackgroundImage = Properties.Resources.Panel3;
+                introSpeechPanel.Location = new Point(47, 90);
+                introSpeechPanel.Size = new Size(305, 233);
+                introSpeechPanel.BackgroundImage = Properties.Resources.speechBub;
+                bubbleTextIntro.Text = "Your mad Dr. Virus!\n when I get out of this,\n I'll be coming for you";
+                bubbleTextIntro.Size = new Size(170, 54); 
             }
-            else if (duration >= 14 && duration < 19)
+            else if (duration >= 14 && duration < 19) // goes into slide 4
             {
                 t2.BackgroundImage = Properties.Resources.Panel4;
+                introSpeechPanel.Location = new Point(410, 28);
+                introSpeechPanel.Size = new Size(269, 233);
+                introSpeechPanel.BackgroundImage = Properties.Resources.speakingBubble;
+                bubbleTextIntro.Text = "Sure you will,\n lets see your hack\n your way out of this\n one!"; 
             }
-            else if (duration >= 19 && duration < 24)
+            else if (duration >= 19 && duration < 24) // goes into slide 5
             {
                 t2.BackgroundImage = Properties.Resources.Panel5;
+                introSpeechPanel.Location = new Point(57, 90);
+                introSpeechPanel.Size = new Size(288, 233);
+                introSpeechPanel.BackgroundImage = Properties.Resources.speechBub;
+                bubbleTextIntro.Text = "Must...\n Break...\n Out of here!";
+
+                if (duration == 22)
+                {
+
+                }
             }
             else if (duration >= 24 && duration < 29)
             {
