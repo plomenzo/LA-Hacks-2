@@ -53,15 +53,11 @@
             this.labelgohome = new System.Windows.Forms.Label();
             this.gotot4 = new System.Windows.Forms.Label();
             this.t4 = new System.Windows.Forms.TabPage();
-            this.sol3Test1_1 = new System.Windows.Forms.PictureBox();
             this.blankTest1_2 = new System.Windows.Forms.PictureBox();
             this.blankTest1_1 = new System.Windows.Forms.PictureBox();
             this.blankTest1_4 = new System.Windows.Forms.PictureBox();
             this.blankTest1_3 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.sol4Test1_1 = new System.Windows.Forms.PictureBox();
-            this.sol2Test1_1 = new System.Windows.Forms.PictureBox();
-            this.sol1Test1_1 = new System.Windows.Forms.PictureBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -89,21 +85,25 @@
             this.t13 = new System.Windows.Forms.TabPage();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.speechPanel2 = new System.Windows.Forms.Panel();
+            this.sol3Test1_1 = new System.Windows.Forms.PictureBox();
+            this.sol4Test1_1 = new System.Windows.Forms.PictureBox();
+            this.sol1Test1_1 = new System.Windows.Forms.PictureBox();
+            this.sol2Test1_1 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.t1.SuspendLayout();
             this.t2.SuspendLayout();
             this.t3.SuspendLayout();
             this.t4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sol3Test1_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.blankTest1_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.blankTest1_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.blankTest1_4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.blankTest1_3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sol4Test1_1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sol2Test1_1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sol1Test1_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sol3Test1_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sol4Test1_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sol1Test1_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sol2Test1_1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -366,15 +366,15 @@
             // 
             // t4
             // 
+            this.t4.Controls.Add(this.sol2Test1_1);
+            this.t4.Controls.Add(this.sol1Test1_1);
+            this.t4.Controls.Add(this.sol4Test1_1);
             this.t4.Controls.Add(this.sol3Test1_1);
             this.t4.Controls.Add(this.blankTest1_2);
             this.t4.Controls.Add(this.blankTest1_1);
             this.t4.Controls.Add(this.blankTest1_4);
             this.t4.Controls.Add(this.blankTest1_3);
             this.t4.Controls.Add(this.pictureBox5);
-            this.t4.Controls.Add(this.sol4Test1_1);
-            this.t4.Controls.Add(this.sol2Test1_1);
-            this.t4.Controls.Add(this.sol1Test1_1);
             this.t4.Controls.Add(this.textBox9);
             this.t4.Controls.Add(this.textBox7);
             this.t4.Controls.Add(this.textBox6);
@@ -390,16 +390,6 @@
             this.t4.TabIndex = 3;
             this.t4.Text = "tabPage1";
             this.t4.UseVisualStyleBackColor = true;
-            // 
-            // sol3Test1_1
-            // 
-            this.sol3Test1_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sol3Test1_1.Location = new System.Drawing.Point(663, 240);
-            this.sol3Test1_1.Name = "sol3Test1_1";
-            this.sol3Test1_1.Size = new System.Drawing.Size(156, 20);
-            this.sol3Test1_1.TabIndex = 49;
-            this.sol3Test1_1.TabStop = false;
-            this.sol3Test1_1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.sol3Test1_1_MouseDown);
             // 
             // blankTest1_2
             // 
@@ -456,36 +446,6 @@
             this.pictureBox5.Size = new System.Drawing.Size(107, 158);
             this.pictureBox5.TabIndex = 44;
             this.pictureBox5.TabStop = false;
-            // 
-            // sol4Test1_1
-            // 
-            this.sol4Test1_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sol4Test1_1.Location = new System.Drawing.Point(663, 296);
-            this.sol4Test1_1.Name = "sol4Test1_1";
-            this.sol4Test1_1.Size = new System.Drawing.Size(156, 20);
-            this.sol4Test1_1.TabIndex = 43;
-            this.sol4Test1_1.TabStop = false;
-            this.sol4Test1_1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.sol4Test1_1_MouseDown);
-            // 
-            // sol2Test1_1
-            // 
-            this.sol2Test1_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sol2Test1_1.Location = new System.Drawing.Point(663, 421);
-            this.sol2Test1_1.Name = "sol2Test1_1";
-            this.sol2Test1_1.Size = new System.Drawing.Size(156, 20);
-            this.sol2Test1_1.TabIndex = 42;
-            this.sol2Test1_1.TabStop = false;
-            this.sol2Test1_1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.sol2Test1_1_MouseDown);
-            // 
-            // sol1Test1_1
-            // 
-            this.sol1Test1_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sol1Test1_1.Location = new System.Drawing.Point(663, 357);
-            this.sol1Test1_1.Name = "sol1Test1_1";
-            this.sol1Test1_1.Size = new System.Drawing.Size(156, 20);
-            this.sol1Test1_1.TabIndex = 41;
-            this.sol1Test1_1.TabStop = false;
-            this.sol1Test1_1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.sol1Test1_1_MouseDown);
             // 
             // textBox9
             // 
@@ -760,6 +720,50 @@
             this.speechPanel2.Size = new System.Drawing.Size(256, 228);
             this.speechPanel2.TabIndex = 10;
             // 
+            // sol3Test1_1
+            // 
+            this.sol3Test1_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sol3Test1_1.Image = global::LA_Hacks_2015.Properties.Resources.test1String;
+            this.sol3Test1_1.Location = new System.Drawing.Point(629, 240);
+            this.sol3Test1_1.Name = "sol3Test1_1";
+            this.sol3Test1_1.Size = new System.Drawing.Size(156, 20);
+            this.sol3Test1_1.TabIndex = 49;
+            this.sol3Test1_1.TabStop = false;
+            this.sol3Test1_1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.sol3Test1_1_MouseDown);
+            // 
+            // sol4Test1_1
+            // 
+            this.sol4Test1_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sol4Test1_1.Image = global::LA_Hacks_2015.Properties.Resources.test1Double;
+            this.sol4Test1_1.Location = new System.Drawing.Point(629, 296);
+            this.sol4Test1_1.Name = "sol4Test1_1";
+            this.sol4Test1_1.Size = new System.Drawing.Size(156, 20);
+            this.sol4Test1_1.TabIndex = 50;
+            this.sol4Test1_1.TabStop = false;
+            this.sol4Test1_1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.sol4Test1_1_MouseDown);
+            // 
+            // sol1Test1_1
+            // 
+            this.sol1Test1_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sol1Test1_1.Image = global::LA_Hacks_2015.Properties.Resources.test1Int;
+            this.sol1Test1_1.Location = new System.Drawing.Point(629, 357);
+            this.sol1Test1_1.Name = "sol1Test1_1";
+            this.sol1Test1_1.Size = new System.Drawing.Size(156, 20);
+            this.sol1Test1_1.TabIndex = 51;
+            this.sol1Test1_1.TabStop = false;
+            this.sol1Test1_1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.sol1Test1_1_MouseDown);
+            // 
+            // sol2Test1_1
+            // 
+            this.sol2Test1_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sol2Test1_1.Image = global::LA_Hacks_2015.Properties.Resources.test1Variable;
+            this.sol2Test1_1.Location = new System.Drawing.Point(629, 421);
+            this.sol2Test1_1.Name = "sol2Test1_1";
+            this.sol2Test1_1.Size = new System.Drawing.Size(156, 20);
+            this.sol2Test1_1.TabIndex = 52;
+            this.sol2Test1_1.TabStop = false;
+            this.sol2Test1_1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.sol2Test1_1_MouseDown);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -781,16 +785,16 @@
             this.t3.PerformLayout();
             this.t4.ResumeLayout(false);
             this.t4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sol3Test1_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.blankTest1_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.blankTest1_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.blankTest1_4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.blankTest1_3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sol4Test1_1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sol2Test1_1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sol1Test1_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sol3Test1_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sol4Test1_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sol1Test1_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sol2Test1_1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -834,9 +838,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox sol4Test1_1;
-        private System.Windows.Forms.PictureBox sol2Test1_1;
-        private System.Windows.Forms.PictureBox sol1Test1_1;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox6;
@@ -849,10 +850,13 @@
         private System.Windows.Forms.PictureBox blankTest1_1;
         private System.Windows.Forms.PictureBox blankTest1_4;
         private System.Windows.Forms.PictureBox blankTest1_3;
-        private System.Windows.Forms.PictureBox sol3Test1_1;
         private System.Windows.Forms.Label nextButton2;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Panel speechPanel2;
+        private System.Windows.Forms.PictureBox sol2Test1_1;
+        private System.Windows.Forms.PictureBox sol1Test1_1;
+        private System.Windows.Forms.PictureBox sol4Test1_1;
+        private System.Windows.Forms.PictureBox sol3Test1_1;
     }
 }
 
