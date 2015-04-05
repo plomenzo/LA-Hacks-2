@@ -34,11 +34,34 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.t1 = new System.Windows.Forms.TabPage();
+            this.level_4_Button = new System.Windows.Forms.Label();
+            this.level_3_Button = new System.Windows.Forms.Label();
+            this.level_2_Button = new System.Windows.Forms.Label();
+            this.level_1_Button = new System.Windows.Forms.Label();
+            this.introButton = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.exitButton = new System.Windows.Forms.Label();
+            this.t2 = new System.Windows.Forms.TabPage();
+            this.introSpeechPanel = new System.Windows.Forms.Panel();
+            this.bubbleTextIntro = new System.Windows.Forms.Label();
+            this.nextButton2 = new System.Windows.Forms.Label();
+            this.Skip2 = new System.Windows.Forms.Label();
+            this.backtoMM2 = new System.Windows.Forms.Label();
+            this.exitButton2 = new System.Windows.Forms.Label();
             this.t3 = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.labelgohome = new System.Windows.Forms.Label();
             this.gotot4 = new System.Windows.Forms.Label();
             this.t4 = new System.Windows.Forms.TabPage();
+            this.sol2Test1_1 = new System.Windows.Forms.PictureBox();
+            this.sol1Test1_1 = new System.Windows.Forms.PictureBox();
+            this.sol4Test1_1 = new System.Windows.Forms.PictureBox();
+            this.sol3Test1_1 = new System.Windows.Forms.PictureBox();
+            this.blankTest1_2 = new System.Windows.Forms.PictureBox();
+            this.blankTest1_1 = new System.Windows.Forms.PictureBox();
+            this.blankTest1_4 = new System.Windows.Forms.PictureBox();
+            this.blankTest1_3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -46,6 +69,7 @@
             this.submitTest1_1 = new System.Windows.Forms.Button();
             this.test1Text = new System.Windows.Forms.TextBox();
             this.resetTest1_1 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.t14 = new System.Windows.Forms.TabPage();
             this.t15 = new System.Windows.Forms.TabPage();
             this.t16 = new System.Windows.Forms.TabPage();
@@ -65,6 +89,7 @@
             this.t13 = new System.Windows.Forms.TabPage();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.speechPanel2 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
             this.t1 = new System.Windows.Forms.TabPage();
             this.level_4_Button = new System.Windows.Forms.Label();
             this.level_3_Button = new System.Windows.Forms.Label();
@@ -91,10 +116,19 @@
             this.introSpeechPanel = new System.Windows.Forms.Panel();
             this.bubbleTextIntro = new System.Windows.Forms.Label();
             this.t2 = new System.Windows.Forms.TabPage();
+=======
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+>>>>>>> origin/master
             this.tabControl1.SuspendLayout();
+            this.t1.SuspendLayout();
+<<<<<<< HEAD
+=======
+            this.t2.SuspendLayout();
+            this.introSpeechPanel.SuspendLayout();
             this.t3.SuspendLayout();
             this.t4.SuspendLayout();
-            this.t1.SuspendLayout();
+>>>>>>> origin/master
             ((System.ComponentModel.ISupportInitialize)(this.sol2Test1_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sol1Test1_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sol4Test1_1)).BeginInit();
@@ -141,10 +175,199 @@
             this.tabControl1.Size = new System.Drawing.Size(1285, 812);
             this.tabControl1.TabIndex = 2;
             // 
+            // t1
+            // 
+            this.t1.BackgroundImage = global::LA_Hacks_2015.Properties.Resources.Maintitle;
+            this.t1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.t1.Controls.Add(this.level_4_Button);
+            this.t1.Controls.Add(this.level_3_Button);
+            this.t1.Controls.Add(this.level_2_Button);
+            this.t1.Controls.Add(this.level_1_Button);
+            this.t1.Controls.Add(this.introButton);
+            this.t1.Controls.Add(this.label1);
+            this.t1.Controls.Add(this.exitButton);
+            this.t1.Location = new System.Drawing.Point(4, 22);
+            this.t1.Name = "t1";
+            this.t1.Padding = new System.Windows.Forms.Padding(3);
+            this.t1.Size = new System.Drawing.Size(1277, 786);
+            this.t1.TabIndex = 0;
+            this.t1.Text = "tabPage1";
+            this.t1.UseVisualStyleBackColor = true;
+            this.t1.Click += new System.EventHandler(this.t1_Click);
+            // 
+            // level_4_Button
+            // 
+            this.level_4_Button.AutoSize = true;
+            this.level_4_Button.Enabled = false;
+            this.level_4_Button.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.level_4_Button.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.level_4_Button.Location = new System.Drawing.Point(1040, 393);
+            this.level_4_Button.Name = "level_4_Button";
+            this.level_4_Button.Size = new System.Drawing.Size(285, 23);
+            this.level_4_Button.TabIndex = 6;
+            this.level_4_Button.Text = "Level 4 Advanced Loops";
+            this.level_4_Button.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // level_3_Button
+            // 
+            this.level_3_Button.AutoSize = true;
+            this.level_3_Button.Enabled = false;
+            this.level_3_Button.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.level_3_Button.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.level_3_Button.Location = new System.Drawing.Point(1040, 342);
+            this.level_3_Button.Name = "level_3_Button";
+            this.level_3_Button.Size = new System.Drawing.Size(167, 23);
+            this.level_3_Button.TabIndex = 5;
+            this.level_3_Button.Text = "Level 3 Loops";
+            this.level_3_Button.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // level_2_Button
+            // 
+            this.level_2_Button.AutoSize = true;
+            this.level_2_Button.Enabled = false;
+            this.level_2_Button.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.level_2_Button.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.level_2_Button.Location = new System.Drawing.Point(1040, 283);
+            this.level_2_Button.Name = "level_2_Button";
+            this.level_2_Button.Size = new System.Drawing.Size(248, 23);
+            this.level_2_Button.TabIndex = 4;
+            this.level_2_Button.Text = "Level 2 If Statements";
+            this.level_2_Button.Click += new System.EventHandler(this.level_2_Button_Click_1);
+            // 
+            // level_1_Button
+            // 
+            this.level_1_Button.AutoSize = true;
+            this.level_1_Button.Enabled = false;
+            this.level_1_Button.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.level_1_Button.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.level_1_Button.Location = new System.Drawing.Point(1036, 227);
+            this.level_1_Button.Name = "level_1_Button";
+            this.level_1_Button.Size = new System.Drawing.Size(219, 23);
+            this.level_1_Button.TabIndex = 3;
+            this.level_1_Button.Text = "Level 1 Data Types";
+            this.level_1_Button.Click += new System.EventHandler(this.level_1_Button_Click);
+            // 
+            // introButton
+            // 
+            this.introButton.AutoSize = true;
+            this.introButton.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.introButton.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.introButton.Location = new System.Drawing.Point(1032, 169);
+            this.introButton.Name = "introButton";
+            this.introButton.Size = new System.Drawing.Size(67, 23);
+            this.introButton.TabIndex = 2;
+            this.introButton.Text = "Intro";
+            this.introButton.Click += new System.EventHandler(this.introButton_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.label1.Location = new System.Drawing.Point(56, 67);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(497, 85);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Hackerman Coding";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // exitButton
+            // 
+            this.exitButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.exitButton.AutoSize = true;
+            this.exitButton.Font = new System.Drawing.Font("SketchFlow Print", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.exitButton.Location = new System.Drawing.Point(1159, 53);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(89, 40);
+            this.exitButton.TabIndex = 0;
+            this.exitButton.Text = "Exit";
+            this.exitButton.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // t2
+            // 
+            this.t2.BackgroundImage = global::LA_Hacks_2015.Properties.Resources.Panel1;
+            this.t2.Controls.Add(this.introSpeechPanel);
+            this.t2.Controls.Add(this.nextButton2);
+            this.t2.Controls.Add(this.Skip2);
+            this.t2.Controls.Add(this.backtoMM2);
+            this.t2.Controls.Add(this.exitButton2);
+            this.t2.Location = new System.Drawing.Point(4, 22);
+            this.t2.Name = "t2";
+            this.t2.Padding = new System.Windows.Forms.Padding(3);
+            this.t2.Size = new System.Drawing.Size(1277, 786);
+            this.t2.TabIndex = 1;
+            this.t2.Text = "t2";
+            this.t2.UseVisualStyleBackColor = true;
+            // 
+            // introSpeechPanel
+            // 
+            this.introSpeechPanel.BackgroundImage = global::LA_Hacks_2015.Properties.Resources.speechBub;
+            this.introSpeechPanel.Controls.Add(this.bubbleTextIntro);
+            this.introSpeechPanel.Location = new System.Drawing.Point(49, 90);
+            this.introSpeechPanel.Name = "introSpeechPanel";
+            this.introSpeechPanel.Size = new System.Drawing.Size(305, 233);
+            this.introSpeechPanel.TabIndex = 10;
+            // 
+            // bubbleTextIntro
+            // 
+            this.bubbleTextIntro.AutoSize = true;
+            this.bubbleTextIntro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bubbleTextIntro.Location = new System.Drawing.Point(45, 58);
+            this.bubbleTextIntro.Name = "bubbleTextIntro";
+            this.bubbleTextIntro.Size = new System.Drawing.Size(200, 72);
+            this.bubbleTextIntro.TabIndex = 0;
+            this.bubbleTextIntro.Text = "Well looks like I finally\r\n caught you in my nest \r\nHackman... Lets see you \r\nget" +
+    " out of this one...\".";
+            // 
+            // nextButton2
+            // 
+            this.nextButton2.AutoSize = true;
+            this.nextButton2.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nextButton2.Location = new System.Drawing.Point(111, 742);
+            this.nextButton2.Name = "nextButton2";
+            this.nextButton2.Size = new System.Drawing.Size(57, 23);
+            this.nextButton2.TabIndex = 9;
+            this.nextButton2.Text = "Next";
+            this.nextButton2.Click += new System.EventHandler(this.nextButton2_Click);
+            // 
+            // Skip2
+            // 
+            this.Skip2.AutoSize = true;
+            this.Skip2.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Skip2.Location = new System.Drawing.Point(628, 64);
+            this.Skip2.Name = "Skip2";
+            this.Skip2.Size = new System.Drawing.Size(60, 23);
+            this.Skip2.TabIndex = 8;
+            this.Skip2.Text = "Skip";
+            this.Skip2.Click += new System.EventHandler(this.Skip2_Click);
+            // 
+            // backtoMM2
+            // 
+            this.backtoMM2.AutoSize = true;
+            this.backtoMM2.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backtoMM2.Location = new System.Drawing.Point(76, 64);
+            this.backtoMM2.Name = "backtoMM2";
+            this.backtoMM2.Size = new System.Drawing.Size(227, 23);
+            this.backtoMM2.TabIndex = 7;
+            this.backtoMM2.Text = "Back to Main Menu";
+            this.backtoMM2.Click += new System.EventHandler(this.backtoMM2_Click);
+            // 
+            // exitButton2
+            // 
+            this.exitButton2.AutoSize = true;
+            this.exitButton2.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton2.Location = new System.Drawing.Point(1184, 64);
+            this.exitButton2.Name = "exitButton2";
+            this.exitButton2.Size = new System.Drawing.Size(52, 23);
+            this.exitButton2.TabIndex = 5;
+            this.exitButton2.Text = "Exit";
+            this.exitButton2.Click += new System.EventHandler(this.exitButton2_Click);
+            // 
             // t3
             // 
-            this.t3.Controls.Add(this.panel1);
-            this.t3.Controls.Add(this.textBox1);
+            this.t3.Controls.Add(this.label2);
+            this.t3.Controls.Add(this.panel2);
             this.t3.Controls.Add(this.labelgohome);
             this.t3.Controls.Add(this.gotot4);
             this.t3.Location = new System.Drawing.Point(4, 22);
@@ -154,17 +377,6 @@
             this.t3.TabIndex = 2;
             this.t3.Text = "tabPage3";
             this.t3.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(498, 138);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(618, 279);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.Text = resources.GetString("textBox1.Text");
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // labelgohome
             // 
@@ -216,6 +428,106 @@
             this.t4.TabIndex = 3;
             this.t4.Text = "tabPage1";
             this.t4.UseVisualStyleBackColor = true;
+            // 
+            // sol2Test1_1
+            // 
+            this.sol2Test1_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sol2Test1_1.Image = global::LA_Hacks_2015.Properties.Resources.test1Variable;
+            this.sol2Test1_1.Location = new System.Drawing.Point(629, 421);
+            this.sol2Test1_1.Name = "sol2Test1_1";
+            this.sol2Test1_1.Size = new System.Drawing.Size(156, 20);
+            this.sol2Test1_1.TabIndex = 52;
+            this.sol2Test1_1.TabStop = false;
+            this.sol2Test1_1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.sol2Test1_1_MouseDown);
+            // 
+            // sol1Test1_1
+            // 
+            this.sol1Test1_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sol1Test1_1.Image = global::LA_Hacks_2015.Properties.Resources.test1Int;
+            this.sol1Test1_1.Location = new System.Drawing.Point(629, 357);
+            this.sol1Test1_1.Name = "sol1Test1_1";
+            this.sol1Test1_1.Size = new System.Drawing.Size(156, 20);
+            this.sol1Test1_1.TabIndex = 51;
+            this.sol1Test1_1.TabStop = false;
+            this.sol1Test1_1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.sol1Test1_1_MouseDown);
+            // 
+            // sol4Test1_1
+            // 
+            this.sol4Test1_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sol4Test1_1.Image = global::LA_Hacks_2015.Properties.Resources.test1Double;
+            this.sol4Test1_1.Location = new System.Drawing.Point(629, 296);
+            this.sol4Test1_1.Name = "sol4Test1_1";
+            this.sol4Test1_1.Size = new System.Drawing.Size(156, 20);
+            this.sol4Test1_1.TabIndex = 50;
+            this.sol4Test1_1.TabStop = false;
+            this.sol4Test1_1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.sol4Test1_1_MouseDown);
+            // 
+            // sol3Test1_1
+            // 
+            this.sol3Test1_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sol3Test1_1.Image = global::LA_Hacks_2015.Properties.Resources.test1String;
+            this.sol3Test1_1.Location = new System.Drawing.Point(629, 240);
+            this.sol3Test1_1.Name = "sol3Test1_1";
+            this.sol3Test1_1.Size = new System.Drawing.Size(156, 20);
+            this.sol3Test1_1.TabIndex = 49;
+            this.sol3Test1_1.TabStop = false;
+            this.sol3Test1_1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.sol3Test1_1_MouseDown);
+            // 
+            // blankTest1_2
+            // 
+            this.blankTest1_2.BackColor = System.Drawing.Color.DimGray;
+            this.blankTest1_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.blankTest1_2.Location = new System.Drawing.Point(890, 421);
+            this.blankTest1_2.Name = "blankTest1_2";
+            this.blankTest1_2.Size = new System.Drawing.Size(156, 20);
+            this.blankTest1_2.TabIndex = 48;
+            this.blankTest1_2.TabStop = false;
+            this.blankTest1_2.DragDrop += new System.Windows.Forms.DragEventHandler(this.blankTest1_2_DragDrop);
+            this.blankTest1_2.DragEnter += new System.Windows.Forms.DragEventHandler(this.blankTest1_2_DragEnter);
+            // 
+            // blankTest1_1
+            // 
+            this.blankTest1_1.BackColor = System.Drawing.Color.DimGray;
+            this.blankTest1_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.blankTest1_1.Location = new System.Drawing.Point(890, 357);
+            this.blankTest1_1.Name = "blankTest1_1";
+            this.blankTest1_1.Size = new System.Drawing.Size(156, 20);
+            this.blankTest1_1.TabIndex = 47;
+            this.blankTest1_1.TabStop = false;
+            this.blankTest1_1.DragDrop += new System.Windows.Forms.DragEventHandler(this.blankTest1_1_DragDrop);
+            this.blankTest1_1.DragEnter += new System.Windows.Forms.DragEventHandler(this.blankTest1_1_DragEnter);
+            // 
+            // blankTest1_4
+            // 
+            this.blankTest1_4.BackColor = System.Drawing.Color.DimGray;
+            this.blankTest1_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.blankTest1_4.Location = new System.Drawing.Point(890, 296);
+            this.blankTest1_4.Name = "blankTest1_4";
+            this.blankTest1_4.Size = new System.Drawing.Size(156, 20);
+            this.blankTest1_4.TabIndex = 46;
+            this.blankTest1_4.TabStop = false;
+            this.blankTest1_4.DragDrop += new System.Windows.Forms.DragEventHandler(this.blankTest1_4_DragDrop);
+            this.blankTest1_4.DragEnter += new System.Windows.Forms.DragEventHandler(this.blankTest1_4_DragEnter);
+            // 
+            // blankTest1_3
+            // 
+            this.blankTest1_3.BackColor = System.Drawing.Color.DimGray;
+            this.blankTest1_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.blankTest1_3.Location = new System.Drawing.Point(890, 240);
+            this.blankTest1_3.Name = "blankTest1_3";
+            this.blankTest1_3.Size = new System.Drawing.Size(156, 20);
+            this.blankTest1_3.TabIndex = 45;
+            this.blankTest1_3.TabStop = false;
+            this.blankTest1_3.DragDrop += new System.Windows.Forms.DragEventHandler(this.blankTest1_3_DragDrop);
+            this.blankTest1_3.DragEnter += new System.Windows.Forms.DragEventHandler(this.blankTest1_3_DragEnter);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(231, 442);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(107, 158);
+            this.pictureBox5.TabIndex = 44;
+            this.pictureBox5.TabStop = false;
             // 
             // textBox9
             // 
@@ -295,6 +607,18 @@
             this.resetTest1_1.Text = "Reset";
             this.resetTest1_1.UseVisualStyleBackColor = true;
             this.resetTest1_1.Click += new System.EventHandler(this.resetTest1_1_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.BackColor = System.Drawing.Color.Black;
+            this.pictureBox2.Location = new System.Drawing.Point(566, 357);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(0, 0);
+            this.pictureBox2.TabIndex = 30;
+            this.pictureBox2.TabStop = false;
             // 
             // t14
             // 
@@ -478,6 +802,7 @@
             this.speechPanel2.Size = new System.Drawing.Size(256, 228);
             this.speechPanel2.TabIndex = 10;
             // 
+<<<<<<< HEAD
             // t1
             // 
             this.t1.BackgroundImage = global::LA_Hacks_2015.Properties.Resources.Maintitle;
@@ -639,74 +964,26 @@
             this.sol3Test1_1.TabIndex = 49;
             this.sol3Test1_1.TabStop = false;
             this.sol3Test1_1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.sol3Test1_1_MouseDown);
+=======
+            // label2
+>>>>>>> origin/master
             // 
-            // blankTest1_2
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(312, 237);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(959, 196);
+            this.label2.TabIndex = 10;
+            this.label2.Text = resources.GetString("label2.Text");
             // 
-            this.blankTest1_2.BackColor = System.Drawing.Color.DimGray;
-            this.blankTest1_2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.blankTest1_2.Location = new System.Drawing.Point(890, 421);
-            this.blankTest1_2.Name = "blankTest1_2";
-            this.blankTest1_2.Size = new System.Drawing.Size(156, 20);
-            this.blankTest1_2.TabIndex = 48;
-            this.blankTest1_2.TabStop = false;
-            this.blankTest1_2.DragDrop += new System.Windows.Forms.DragEventHandler(this.blankTest1_2_DragDrop);
-            this.blankTest1_2.DragEnter += new System.Windows.Forms.DragEventHandler(this.blankTest1_2_DragEnter);
+            // panel2
             // 
-            // blankTest1_1
-            // 
-            this.blankTest1_1.BackColor = System.Drawing.Color.DimGray;
-            this.blankTest1_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.blankTest1_1.Location = new System.Drawing.Point(890, 357);
-            this.blankTest1_1.Name = "blankTest1_1";
-            this.blankTest1_1.Size = new System.Drawing.Size(156, 20);
-            this.blankTest1_1.TabIndex = 47;
-            this.blankTest1_1.TabStop = false;
-            this.blankTest1_1.DragDrop += new System.Windows.Forms.DragEventHandler(this.blankTest1_1_DragDrop);
-            this.blankTest1_1.DragEnter += new System.Windows.Forms.DragEventHandler(this.blankTest1_1_DragEnter);
-            // 
-            // blankTest1_4
-            // 
-            this.blankTest1_4.BackColor = System.Drawing.Color.DimGray;
-            this.blankTest1_4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.blankTest1_4.Location = new System.Drawing.Point(890, 296);
-            this.blankTest1_4.Name = "blankTest1_4";
-            this.blankTest1_4.Size = new System.Drawing.Size(156, 20);
-            this.blankTest1_4.TabIndex = 46;
-            this.blankTest1_4.TabStop = false;
-            this.blankTest1_4.DragDrop += new System.Windows.Forms.DragEventHandler(this.blankTest1_4_DragDrop);
-            this.blankTest1_4.DragEnter += new System.Windows.Forms.DragEventHandler(this.blankTest1_4_DragEnter);
-            // 
-            // blankTest1_3
-            // 
-            this.blankTest1_3.BackColor = System.Drawing.Color.DimGray;
-            this.blankTest1_3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.blankTest1_3.Location = new System.Drawing.Point(890, 240);
-            this.blankTest1_3.Name = "blankTest1_3";
-            this.blankTest1_3.Size = new System.Drawing.Size(156, 20);
-            this.blankTest1_3.TabIndex = 45;
-            this.blankTest1_3.TabStop = false;
-            this.blankTest1_3.DragDrop += new System.Windows.Forms.DragEventHandler(this.blankTest1_3_DragDrop);
-            this.blankTest1_3.DragEnter += new System.Windows.Forms.DragEventHandler(this.blankTest1_3_DragEnter);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Location = new System.Drawing.Point(231, 442);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(107, 158);
-            this.pictureBox5.TabIndex = 44;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.BackColor = System.Drawing.Color.Black;
-            this.pictureBox2.Location = new System.Drawing.Point(566, 357);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(0, 0);
-            this.pictureBox2.TabIndex = 30;
-            this.pictureBox2.TabStop = false;
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Location = new System.Drawing.Point(23, 115);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(263, 372);
+            this.panel2.TabIndex = 9;
             // 
             // exitButton2
             // 
@@ -800,12 +1077,19 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
+            this.t1.ResumeLayout(false);
+            this.t1.PerformLayout();
+<<<<<<< HEAD
+=======
+            this.t2.ResumeLayout(false);
+            this.t2.PerformLayout();
+            this.introSpeechPanel.ResumeLayout(false);
+            this.introSpeechPanel.PerformLayout();
             this.t3.ResumeLayout(false);
             this.t3.PerformLayout();
             this.t4.ResumeLayout(false);
             this.t4.PerformLayout();
-            this.t1.ResumeLayout(false);
-            this.t1.PerformLayout();
+>>>>>>> origin/master
             ((System.ComponentModel.ISupportInitialize)(this.sol2Test1_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sol1Test1_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sol4Test1_1)).EndInit();
@@ -856,8 +1140,6 @@
         private System.Windows.Forms.Label level_4_Button;
         private System.Windows.Forms.Label labelgohome;
         private System.Windows.Forms.Label gotot4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox7;
@@ -880,10 +1162,15 @@
         private System.Windows.Forms.TabPage t2;
         private System.Windows.Forms.Panel introSpeechPanel;
         private System.Windows.Forms.Label bubbleTextIntro;
+<<<<<<< HEAD
         private System.Windows.Forms.Label nextButton2;
         private System.Windows.Forms.Label Skip2;
         private System.Windows.Forms.Label backtoMM2;
         private System.Windows.Forms.Label exitButton2;
+=======
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel2;
+>>>>>>> origin/master
     }
 }
 
