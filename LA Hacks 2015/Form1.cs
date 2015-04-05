@@ -161,5 +161,135 @@ namespace LA_Hacks_2015
         {
             tabControl1.SelectTab("t1");
         }
+
+
+        //---------------------------------------------------------------
+        //START OF PICTURE BOX PROCEDURES
+        private void sol3Test1_1_MouseDown(object sender, MouseEventArgs e)
+        {
+            sol3Test1_1.DoDragDrop(sol3Test1_1.Image, DragDropEffects.Copy);
+        }
+
+        private void blankTest1_3_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Copy;
+        }
+
+        private void blankTest1_3_DragDrop(object sender, DragEventArgs e)
+        {
+            blankTest1_3.Image = (Image)e.Data.GetData(DataFormats.Bitmap);
+            sol1Test1_1.Hide();
+        }
+        //----------------------------------------------------------------
+        //END OF PICTURE BOX PROCEDURES
+
+        //---------------------------------------------------------------
+        //START OF PICTURE BOX PROCEDURES
+        private void sol4Test1_1_MouseDown(object sender, MouseEventArgs e)
+        {
+            sol4Test1_1.DoDragDrop(sol4Test1_1.Image, DragDropEffects.Copy);
+        }
+
+        private void blankTest1_4_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Copy;
+        }
+
+        private void blankTest1_4_DragDrop(object sender, DragEventArgs e)
+        {
+            blankTest1_4.Image = (Image)e.Data.GetData(DataFormats.Bitmap);
+            sol2Test1_1.Hide();
+        }
+        //----------------------------------------------------------------
+        //END OF PICTURE BOX PROCEDURES
+
+        //---------------------------------------------------------------
+        //START OF PICTURE BOX PROCEDURES
+        private void sol1Test1_1_MouseDown(object sender, MouseEventArgs e)
+        {
+            sol1Test1_1.DoDragDrop(sol1Test1_1.Image, DragDropEffects.Copy);
+        }
+
+        private void blankTest1_1_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Copy;
+        }
+
+        private void blankTest1_1_DragDrop(object sender, DragEventArgs e)
+        {
+            blankTest1_1.Image = (Image)e.Data.GetData(DataFormats.Bitmap);
+            sol3Test1_1.Hide();
+        }
+        //----------------------------------------------------------------
+        //END OF PICTURE BOX PROCEDURES
+        //RESET BUTTON
+
+        //---------------------------------------------------------------
+        //START OF PICTURE BOX PROCEDURES
+        private void sol2Test1_1_MouseDown(object sender, MouseEventArgs e)
+        {
+            sol2Test1_1.DoDragDrop(sol2Test1_1.Image, DragDropEffects.Copy);
+        }
+
+        private void blankTest1_2_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.Copy;
+        }
+
+        private void blankTest1_2_DragDrop(object sender, DragEventArgs e)
+        {
+            blankTest1_2.Image = (Image)e.Data.GetData(DataFormats.Bitmap);
+            sol4Test1_1.Hide();
+        }
+        //----------------------------------------------------------------
+        //END OF PICTURE BOX PROCEDURES
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            blankTest1_1.AllowDrop = true;
+            blankTest1_2.AllowDrop = true;
+            blankTest1_3.AllowDrop = true;
+            blankTest1_4.AllowDrop = true;
+        }
+
+        private void resetTest1_1_Click(object sender, EventArgs e)
+        {
+            //REST BUTTON1
+            sol3Test1_1.Location = new Point(604, 234); //set the answer back to it's original location
+            sol3Test1_1.Visible = true;    //make the answer box visible again
+            blankTest1_3.Image = null; //reset the picturebox to have no image
+
+            //RESET BUTTON2
+            sol4Test1_1.Location = new Point(604, 290); //set the answer back to it's original location
+            sol4Test1_1.Visible = true;    //make the answer box visible again
+            blankTest1_4.Image = null; //reset the picturebox to have no image
+
+            //RESET BUTTON3
+            sol1Test1_1.Location = new Point(604, 351); //set the answer back to it's original location
+            sol1Test1_1.Visible = true;    //make the answer box visible again
+            blankTest1_1.Image = null; //reset the picturebox to have no image
+
+            //RESET BUTTON4
+            sol2Test1_1.Location = new Point(604, 415); //set the answer back to it's original location
+            sol2Test1_1.Visible = true;    //make the answer box visible again
+            blankTest1_2.Image = null; //reset the picturebox to have no image
+
+            //RESET THE TEXT
+            test1Text.Text = "Great Job! Now let's see what you've got, Kid!"
+            + " Now it's time to put your newfound knowledge to the test!\n\n"
+            + "I want you to match the boxes to the right. For example, if"
+            + " you see a word that can be used as a string then I want you"
+            + " to drag it in the string box. Or if you see a number, drag it in the int box. Good luck!";
+        }
+
+        private void submitTest1_1_Click(object sender, EventArgs e)
+        {
+            test1Text.Font.SizeInPoints.Equals(40.0);
+            test1Text.Text = "CONGRATUFUCKLATIONS!";
+        }
+
+        
+        //----------------------------------------------------------------
+        //END OF PICTURE BOX PROCEDURES
     }
 }

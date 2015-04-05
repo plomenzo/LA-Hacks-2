@@ -113,7 +113,12 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\bats.jpg" />
     <Content Include="Resources\Maintitle.jpg" />
+    <None Include="Resources\test1Variable.jpg" />
+    <None Include="Resources\test1Int.jpg" />
+    <None Include="Resources\test1Double.jpg" />
+    <None Include="Resources\test1String.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
