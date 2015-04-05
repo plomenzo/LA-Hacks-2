@@ -10,7 +10,7 @@ using System.Threading;
 
 namespace LA_Hacks_2015
 {
- 
+
     public partial class Form1 : Form
     {
         public Form1()
@@ -22,7 +22,7 @@ namespace LA_Hacks_2015
 
             Thread t = new Thread(new ThreadStart(SplashStart));
             t.Start();
-            
+
 
             Thread.Sleep(5000);
 
@@ -55,7 +55,7 @@ namespace LA_Hacks_2015
             e.Effect = DragDropEffects.Copy;
         }
 
-       
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -65,6 +65,8 @@ namespace LA_Hacks_2015
         private void introButton_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab("t2");
+            timer.Start();
+            level_1_Button.Enabled = true;
             //level_1_Button.Enabled = true;
         }
 
@@ -94,22 +96,18 @@ namespace LA_Hacks_2015
 
         private void exitButton2_Click(object sender, EventArgs e)
         {
-            Application.Exit(); 
+            Application.Exit();
         }
 
         private void backtoMM2_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab("t1");
+            timer.Stop();
         }
 
         private void Skip2_Click(object sender, EventArgs e)
         {
             tabControl1.SelectTab("t3");
-        }
-
-        private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
-        {
-            axWindowsMediaPlayer1.URL = "The Price Is Right - Manuela_s Blooper";
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -288,8 +286,105 @@ namespace LA_Hacks_2015
             test1Text.Text = "CONGRATUFUCKLATIONS!";
         }
 
+        // If user pushes next during intro
+        private void nextButton2_Click(object sender, EventArgs e)
+        {
+            if (duration < 4)
+            {
+                duration = 4;
+            }
+            else if (duration >= 4 && duration < 9)
+            {
+                duration = 9;
+            }
+            else if (duration >= 9 && duration < 14)
+            {
+                duration = 14;
+            }
+            else if (duration >= 14 && duration < 19)
+            {
+                duration = 19;
+            }
+            else if (duration >= 19 && duration < 24)
+            {
+                duration = 24;
+            }
+            else if (duration >= 24 && duration < 29)
+            {
+                duration = 29;
+            }
+            else if (duration >= 29 && duration < 34)
+            {
+                duration = 34;
+            }
+            else if (duration >= 34 && duration < 39)
+            {
+                duration = 39;
+            }
+            else if (duration >= 39)
+            {
+                tabControl1.SelectTab("t3");
+                timer.Stop();
+            }
+        }
+
+        //private void reposition (object sender, System.Windows.Forms)
+
+        // Plays for duration of intro
+        int duration = 0;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            duration++;
+            if (duration >= 4 && duration < 9)
+            {
+                t2.BackgroundImage = Properties.Resources.Panel2;
+                //repositionButton.PerformClick();
+            }
+            else if (duration >= 9 && duration < 14)
+            {
+                t2.BackgroundImage = Properties.Resources.Panel3;
+            }
+            else if (duration >= 14 && duration < 19)
+            {
+                t2.BackgroundImage = Properties.Resources.Panel4;
+            }
+            else if (duration >= 19 && duration < 24)
+            {
+                t2.BackgroundImage = Properties.Resources.Panel5;
+            }
+            else if (duration >= 24 && duration < 29)
+            {
+                t2.BackgroundImage = Properties.Resources.Panel6;
+            }
+            else if (duration >= 29 && duration < 34)
+            {
+                t2.BackgroundImage = Properties.Resources.Panel7;
+            }
+            else if (duration >= 34 && duration < 39)
+            {
+                t2.BackgroundImage = Properties.Resources.Panel8;
+            }
+            else if (duration >= 39 && duration < 44)
+            {
+                t2.BackgroundImage = Properties.Resources.Panel9;
+            }
+            else if (duration >= 44)
+            {
+                tabControl1.SelectTab("t3");
+                timer.Stop();
+            }
+        }
+    }
+}
+
+        //private void repositionButton_Click(object sender, EventArgs e)
+        
+            
+            //speechPanel2.Location = new Point(X,Y);
+       
+
         
         //----------------------------------------------------------------
         //END OF PICTURE BOX PROCEDURES
-    }
-}
+    
+

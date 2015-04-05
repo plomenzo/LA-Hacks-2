@@ -31,6 +31,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.t1 = new System.Windows.Forms.TabPage();
@@ -42,16 +43,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.Label();
             this.t2 = new System.Windows.Forms.TabPage();
+            this.nextButton2 = new System.Windows.Forms.Label();
             this.Skip2 = new System.Windows.Forms.Label();
             this.backtoMM2 = new System.Windows.Forms.Label();
             this.exitButton2 = new System.Windows.Forms.Label();
-            this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             this.t3 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.labelgohome = new System.Windows.Forms.Label();
             this.gotot4 = new System.Windows.Forms.Label();
             this.t4 = new System.Windows.Forms.TabPage();
+            this.sol3Test1_1 = new System.Windows.Forms.PictureBox();
             this.blankTest1_2 = new System.Windows.Forms.PictureBox();
             this.blankTest1_1 = new System.Windows.Forms.PictureBox();
             this.blankTest1_4 = new System.Windows.Forms.PictureBox();
@@ -85,14 +87,14 @@
             this.t11 = new System.Windows.Forms.TabPage();
             this.t12 = new System.Windows.Forms.TabPage();
             this.t13 = new System.Windows.Forms.TabPage();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.sol3Test1_1 = new System.Windows.Forms.PictureBox();
+            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.speechPanel2 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.t1.SuspendLayout();
             this.t2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.t3.SuspendLayout();
             this.t4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sol3Test1_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.blankTest1_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.blankTest1_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.blankTest1_4)).BeginInit();
@@ -102,7 +104,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.sol2Test1_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sol1Test1_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sol3Test1_1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -248,10 +249,11 @@
             // 
             // t2
             // 
+            this.t2.BackgroundImage = global::LA_Hacks_2015.Properties.Resources.Panel1;
+            this.t2.Controls.Add(this.nextButton2);
             this.t2.Controls.Add(this.Skip2);
             this.t2.Controls.Add(this.backtoMM2);
             this.t2.Controls.Add(this.exitButton2);
-            this.t2.Controls.Add(this.axWindowsMediaPlayer1);
             this.t2.Location = new System.Drawing.Point(4, 22);
             this.t2.Name = "t2";
             this.t2.Padding = new System.Windows.Forms.Padding(3);
@@ -260,11 +262,22 @@
             this.t2.Text = "t2";
             this.t2.UseVisualStyleBackColor = true;
             // 
+            // nextButton2
+            // 
+            this.nextButton2.AutoSize = true;
+            this.nextButton2.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nextButton2.Location = new System.Drawing.Point(111, 742);
+            this.nextButton2.Name = "nextButton2";
+            this.nextButton2.Size = new System.Drawing.Size(57, 23);
+            this.nextButton2.TabIndex = 9;
+            this.nextButton2.Text = "Next";
+            this.nextButton2.Click += new System.EventHandler(this.nextButton2_Click);
+            // 
             // Skip2
             // 
             this.Skip2.AutoSize = true;
             this.Skip2.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Skip2.Location = new System.Drawing.Point(643, 256);
+            this.Skip2.Location = new System.Drawing.Point(628, 64);
             this.Skip2.Name = "Skip2";
             this.Skip2.Size = new System.Drawing.Size(60, 23);
             this.Skip2.TabIndex = 8;
@@ -275,7 +288,7 @@
             // 
             this.backtoMM2.AutoSize = true;
             this.backtoMM2.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backtoMM2.Location = new System.Drawing.Point(602, 388);
+            this.backtoMM2.Location = new System.Drawing.Point(76, 64);
             this.backtoMM2.Name = "backtoMM2";
             this.backtoMM2.Size = new System.Drawing.Size(227, 23);
             this.backtoMM2.TabIndex = 7;
@@ -286,22 +299,12 @@
             // 
             this.exitButton2.AutoSize = true;
             this.exitButton2.Font = new System.Drawing.Font("SketchFlow Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitButton2.Location = new System.Drawing.Point(781, 64);
+            this.exitButton2.Location = new System.Drawing.Point(1184, 64);
             this.exitButton2.Name = "exitButton2";
-            this.exitButton2.Size = new System.Drawing.Size(48, 23);
+            this.exitButton2.Size = new System.Drawing.Size(52, 23);
             this.exitButton2.TabIndex = 5;
-            this.exitButton2.Text = "exit";
+            this.exitButton2.Text = "Exit";
             this.exitButton2.Click += new System.EventHandler(this.exitButton2_Click);
-            // 
-            // axWindowsMediaPlayer1
-            // 
-            this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(70, 64);
-            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(305, 287);
-            this.axWindowsMediaPlayer1.TabIndex = 9;
-            this.axWindowsMediaPlayer1.Enter += new System.EventHandler(this.axWindowsMediaPlayer1_Enter);
             // 
             // t3
             // 
@@ -388,6 +391,16 @@
             this.t4.Text = "tabPage1";
             this.t4.UseVisualStyleBackColor = true;
             // 
+            // sol3Test1_1
+            // 
+            this.sol3Test1_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sol3Test1_1.Location = new System.Drawing.Point(663, 240);
+            this.sol3Test1_1.Name = "sol3Test1_1";
+            this.sol3Test1_1.Size = new System.Drawing.Size(156, 20);
+            this.sol3Test1_1.TabIndex = 49;
+            this.sol3Test1_1.TabStop = false;
+            this.sol3Test1_1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.sol3Test1_1_MouseDown);
+            // 
             // blankTest1_2
             // 
             this.blankTest1_2.BackColor = System.Drawing.Color.DimGray;
@@ -438,7 +451,6 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::LA_Hacks_2015.Properties.Resources.bats;
             this.pictureBox5.Location = new System.Drawing.Point(231, 442);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(107, 158);
@@ -448,7 +460,6 @@
             // sol4Test1_1
             // 
             this.sol4Test1_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sol4Test1_1.Image = global::LA_Hacks_2015.Properties.Resources.test1Double;
             this.sol4Test1_1.Location = new System.Drawing.Point(663, 296);
             this.sol4Test1_1.Name = "sol4Test1_1";
             this.sol4Test1_1.Size = new System.Drawing.Size(156, 20);
@@ -459,7 +470,6 @@
             // sol2Test1_1
             // 
             this.sol2Test1_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sol2Test1_1.Image = global::LA_Hacks_2015.Properties.Resources.test1Variable;
             this.sol2Test1_1.Location = new System.Drawing.Point(663, 421);
             this.sol2Test1_1.Name = "sol2Test1_1";
             this.sol2Test1_1.Size = new System.Drawing.Size(156, 20);
@@ -470,7 +480,6 @@
             // sol1Test1_1
             // 
             this.sol1Test1_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sol1Test1_1.Image = global::LA_Hacks_2015.Properties.Resources.test1Int;
             this.sol1Test1_1.Location = new System.Drawing.Point(663, 357);
             this.sol1Test1_1.Name = "sol1Test1_1";
             this.sol1Test1_1.Size = new System.Drawing.Size(156, 20);
@@ -739,20 +748,17 @@
             this.t13.Text = "tabPage18";
             this.t13.UseVisualStyleBackColor = true;
             // 
-            // openFileDialog1
+            // timer
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.timer.Interval = 1000;
+            this.timer.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // sol3Test1_1
+            // speechPanel2
             // 
-            this.sol3Test1_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sol3Test1_1.Image = global::LA_Hacks_2015.Properties.Resources.test1String;
-            this.sol3Test1_1.Location = new System.Drawing.Point(663, 240);
-            this.sol3Test1_1.Name = "sol3Test1_1";
-            this.sol3Test1_1.Size = new System.Drawing.Size(156, 20);
-            this.sol3Test1_1.TabIndex = 49;
-            this.sol3Test1_1.TabStop = false;
-            this.sol3Test1_1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.sol3Test1_1_MouseDown);
+            this.speechPanel2.Location = new System.Drawing.Point(47, 81);
+            this.speechPanel2.Name = "speechPanel2";
+            this.speechPanel2.Size = new System.Drawing.Size(256, 228);
+            this.speechPanel2.TabIndex = 10;
             // 
             // Form1
             // 
@@ -771,11 +777,11 @@
             this.t1.PerformLayout();
             this.t2.ResumeLayout(false);
             this.t2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             this.t3.ResumeLayout(false);
             this.t3.PerformLayout();
             this.t4.ResumeLayout(false);
             this.t4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sol3Test1_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.blankTest1_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.blankTest1_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.blankTest1_4)).EndInit();
@@ -785,7 +791,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.sol2Test1_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sol1Test1_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sol3Test1_1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -816,8 +821,6 @@
         private System.Windows.Forms.Label exitButton2;
         private System.Windows.Forms.Label backtoMM2;
         private System.Windows.Forms.Label Skip2;
-        private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.TabPage t1;
         private System.Windows.Forms.Label level_3_Button;
         private System.Windows.Forms.Label level_2_Button;
@@ -847,6 +850,9 @@
         private System.Windows.Forms.PictureBox blankTest1_4;
         private System.Windows.Forms.PictureBox blankTest1_3;
         private System.Windows.Forms.PictureBox sol3Test1_1;
+        private System.Windows.Forms.Label nextButton2;
+        private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Panel speechPanel2;
     }
 }
 
