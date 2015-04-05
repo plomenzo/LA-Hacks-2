@@ -142,6 +142,9 @@
   <data name="Panel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Panel1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Panel3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Panel3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Panel9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Panel9.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,13 +160,13 @@
   <data name="Maintitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Maintitle.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Panel3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Panel3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Panel4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Panel4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="test1String" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\test1String.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="speechBub" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\speechBub.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

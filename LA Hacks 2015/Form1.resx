@@ -117,12 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="test1Text.Text" xml:space="preserve">
-    <value>Great Job! Now let's see what you've got, Kid!
-Now it's time to put your newfound knowledge to the test!
-
-I want you to match the boxes to the right. For example, if you see a word that can be used as a string then I want you to drag it in the string box. Or if you see a number, drag it in the int box. Good luck!</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3521,6 +3515,12 @@ I want you to match the boxes to the right. For example, if you see a word that 
 
 
 </value>
+  </data>
+  <data name="test1Text.Text" xml:space="preserve">
+    <value>Great Job! Now let's see what you've got, Kid!
+Now it's time to put your newfound knowledge to the test!
+
+I want you to match the boxes to the right. For example, if you see a word that can be used as a string then I want you to drag it in the string box. Or if you see a number, drag it in the int box. Good luck!</value>
   </data>
   <metadata name="timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>

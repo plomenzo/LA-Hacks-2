@@ -328,8 +328,6 @@ namespace LA_Hacks_2015
             }
         }
 
-        //private void reposition (object sender, System.Windows.Forms)
-
         // Plays for duration of intro
         int duration = 0;
         private void timer1_Tick(object sender, EventArgs e)
@@ -377,11 +375,6 @@ namespace LA_Hacks_2015
     }
 }
 
-        //private void repositionButton_Click(object sender, EventArgs e)
-        
-            
-            //speechPanel2.Location = new Point(X,Y);
-       
 
         
         //----------------------------------------------------------------
